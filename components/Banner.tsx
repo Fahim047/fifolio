@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiArrowDownTray } from 'react-icons/hi2';
+import SocialLinks from './SocialLinks';
 const Banner = () => {
 	return (
 		<section>
@@ -27,36 +27,15 @@ const Banner = () => {
 					</div>
 					<div className="flex flex-col md:flex-row md:items-center gap-4">
 						<a
-							className="px-4 py-2 rounded-md border-2 border-transparent bg-[#4f6fb9] hover:bg-transparent hover:border-[#88a4e6] flex items-center justify-center gap-2 duration-300"
+							className="bg-[#88a4e6] hover:bg-[#afc2ef] duration-300 px-4 py-2 rounded-lg text-[15px] text-[#0C121e] font-medium flex items-center justify-center gap-2"
 							href="/about"
 						>
-							<span className="text-2xl">
+							<span>
 								<HiArrowDownTray />
 							</span>
 							<span>Resume</span>
 						</a>
-						<ul className="flex items-center gap-1">
-							<li>
-								<a
-									href="/"
-									className="flex items-center justify-center p-2 rounded-full hover:bg-green-900 duration-300"
-								>
-									<span className="text-2xl">
-										<FaGithub />
-									</span>
-								</a>
-							</li>
-							<li>
-								<a
-									href="/"
-									className="flex items-center justify-center p-2 rounded-full hover:bg-blue-900 duration-300"
-								>
-									<span className="text-2xl">
-										<FaLinkedin />
-									</span>
-								</a>
-							</li>
-						</ul>
+						<SocialLinks />
 					</div>
 				</div>
 			</div>

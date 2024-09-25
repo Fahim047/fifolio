@@ -4,7 +4,7 @@ const FeaturedProjects = () => {
 	return (
 		<section className="mt-12">
 			<div className="flex flex-wrap gap-4 justify-between items-center">
-				<h2 className="text-2xl font-bold text-[#88A4E6]">Featured Projects</h2>
+				<h2 className="text-2xl font-bold text-blue-400">Featured Projects</h2>
 				<Link
 					href="/projects"
 					className="bg-[#88a4e6] hover:bg-[#afc2ef] duration-300 px-4 py-2 rounded-lg text-[15px] text-[#0C121e] font-medium flex items-center justify-center gap-2"
