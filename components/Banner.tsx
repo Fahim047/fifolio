@@ -3,7 +3,7 @@ import { HiArrowDownTray } from 'react-icons/hi2';
 const Banner = () => {
 	return (
 		<section>
-			<div className="wrapper md:flex md:items-end">
+			<div className="wrapper md:flex md:items-end space-y-6">
 				<img
 					className="max-w-[240px] mx-auto"
 					src="/fif-transparent.png"
