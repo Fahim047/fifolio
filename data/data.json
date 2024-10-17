@@ -1,0 +1,124 @@
+{
+	"personalInfo": {
+		"name": "Fahimul Islam",
+		"title": "Full Stack Developer",
+		"email": "fahimulislam58@gmail.com",
+		"phone": "+8801521578288",
+		"location": "New York, USA",
+		"bio": "Passionate developer with over 5 years of experience building full-stack applications. I specialize in React, Node.js, and scalable backend systems.",
+		"socialLinks": {
+			"linkedin": "https://www.linkedin.com/in/fahimul047",
+			"github": "https://github.com/Fahim047",
+			"twitter": "https://x.com/_fahim047",
+			"portfolio": "https://fifolio.vercel.app"
+		}
+	},
+	"skills": {
+		"languages": ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
+		"frameworks": ["React", "Next.js", "Node.js", "Express", "Django"],
+		"databases": ["MongoDB", "PostgreSQL", "MySQL"],
+		"tools": ["Git", "Docker", "Jenkins", "AWS", "Webpack"]
+	},
+	"experience": [
+		{
+			"company": "TechCorp",
+			"role": "Senior Full Stack Developer",
+			"startDate": "2021-06",
+			"endDate": "Present",
+			"location": "Remote",
+			"description": [
+				"Led a team of 5 developers in building a SaaS platform using React and Node.js.",
+				"Designed and implemented RESTful APIs, optimizing database queries by 20%.",
+				"Collaborated with cross-functional teams to deliver new features."
+			]
+		},
+		{
+			"company": "WebSolutions",
+			"role": "Full Stack Developer",
+			"startDate": "2019-03",
+			"endDate": "2021-05",
+			"location": "New York, USA",
+			"description": [
+				"Developed an e-commerce platform with Next.js, improving page load speeds by 30%.",
+				"Integrated third-party payment gateways and optimized performance using server-side rendering.",
+				"Worked closely with the UI/UX team to improve user experience."
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "University of Tech",
+			"degree": "Bachelor of Science in Computer Science",
+			"startDate": "2014-09",
+			"endDate": "2018-06",
+			"location": "New York, USA",
+			"description": [
+				"Graduated with a 3.8 GPA.",
+				"Relevant courses: Data Structures, Algorithms, Web Development, Database Management."
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "Portfolio Website",
+			"description": "A personal portfolio website built with Next.js, showcasing my projects and experience.",
+			"techStack": ["Next.js", "Tailwind CSS", "Vercel"],
+			"githubLink": "https://github.com/Fahim047/fifolio",
+			"liveLink": "https://fifolio.vercel.app"
+		},
+		{
+			"name": "Task Manager API",
+			"description": "A task management API built with Node.js and Express, offering RESTful endpoints to manage tasks.",
+			"techStack": ["Node.js", "Express", "MongoDB"],
+			"githubLink": "https://github.com/johndoe/task-manager-api",
+			"liveLink": "https://api.johndoe.dev"
+		}
+	],
+	"testimonials": [
+		{
+			"name": "Jane Smith",
+			"company": "WebSolutions",
+			"feedback": "John is an exceptional developer with a strong ability to break down complex problems into manageable tasks. His expertise in full-stack development made a significant difference in our project."
+		},
+		{
+			"name": "Michael Johnson",
+			"company": "TechCorp",
+			"feedback": "Working with John has been a pleasure. He is not only skilled in modern web technologies but also a great team player and communicator."
+		}
+	],
+	"certifications": [
+		{
+			"name": "AWS Certified Solutions Architect",
+			"organization": "Amazon Web Services",
+			"date": "2022-07"
+		},
+		{
+			"name": "Certified Kubernetes Administrator",
+			"organization": "CNCF",
+			"date": "2023-01"
+		}
+	],
+	"blogs": [
+		{
+			"title": "Understanding React Hooks",
+			"description": "A deep dive into how React Hooks work and how they can improve functional components in React.",
+			"date": "2023-06-15",
+			"tags": ["React", "JavaScript", "Web Development"],
+			"link": "https://johndoe.dev/blog/understanding-react-hooks"
+		},
+		{
+			"title": "Building Scalable Node.js Applications",
+			"description": "Tips and techniques to build highly scalable applications using Node.js and Express.",
+			"date": "2023-09-01",
+			"tags": ["Node.js", "Backend Development", "Scalability"],
+			"link": "https://johndoe.dev/blog/building-scalable-nodejs-apps"
+		},
+		{
+			"title": "Next.js vs. Gatsby: Which Should You Choose?",
+			"description": "A comparison between two popular React-based frameworks, Next.js and Gatsby, focusing on their strengths and best use cases.",
+			"date": "2024-01-10",
+			"tags": ["Next.js", "Gatsby", "Frontend Development"],
+			"link": "https://johndoe.dev/blog/nextjs-vs-gatsby"
+		}
+	]
+}

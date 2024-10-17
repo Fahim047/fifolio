@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const SocialLinks = () => {
 	return (
@@ -20,6 +20,16 @@ const SocialLinks = () => {
 				>
 					<span className="text-2xl">
 						<FaLinkedin />
+					</span>
+				</a>
+			</li>
+			<li>
+				<a
+					href="/"
+					className="flex items-center justify-center p-2 rounded-full hover:bg-blue-900 duration-300"
+				>
+					<span className="text-2xl">
+						<FaFacebook />
 					</span>
 				</a>
 			</li>

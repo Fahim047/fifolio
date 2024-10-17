@@ -1,3 +1,4 @@
+import Blog from '@/components/Blog';
 import Banner from '../components/Banner';
 import FeaturedProjects from '../components/FeaturedProjects';
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
 		<>
 			<Banner />
 			<FeaturedProjects />
+			<Blog />
 		</>
 	);
 }

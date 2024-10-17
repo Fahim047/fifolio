@@ -3,8 +3,8 @@ import { HiCodeBracket, HiSun, HiMoon } from 'react-icons/hi2';
 const Navbar = () => {
 	return (
 		<nav
-			className="sticky top-0 px-2 py-1 md:px-4 md:py-3 bg-[#151e30] 
-		 border-2 border-blue-100/10 drop-shadow-lg rounded-xl flex justify-between items-center"
+			className="w-full px-4 py-3 bg-[#151e30] 
+ border-2 border-blue-100/10 drop-shadow-lg rounded-xl flex justify-between items-center"
 		>
 			<Link
 				href="/"
