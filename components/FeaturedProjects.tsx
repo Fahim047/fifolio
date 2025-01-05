@@ -29,8 +29,11 @@ const FeaturedProjects = () => {
 					</div>
 				</div> */}
 				{featuredProjects.map((project) => (
-					<div
+					<Link
+						href={project.liveLink}
 						key={project.id}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
 					>
 						<Image
@@ -44,7 +47,7 @@ const FeaturedProjects = () => {
 							<h3 className="font-bold mb-2">{project.title}</h3>
 							<p className="text-sm">{project.description}</p>
 						</div>
-					</div>
+					</Link>
 				))}
 			</div>
 		</section>

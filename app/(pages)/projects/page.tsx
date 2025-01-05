@@ -1,5 +1,6 @@
 import data from '@/data/data.json';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Projects = () => {
 	const { projects } = data;
@@ -26,8 +27,11 @@ const Projects = () => {
 				</div>
 			</div> */}
 				{projects.map((project) => (
-					<div
+					<Link
+						href={project.liveLink}
 						key={project.id}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
 					>
 						<Image
@@ -41,7 +45,7 @@ const Projects = () => {
 							<h3 className="font-bold mb-2">{project.title}</h3>
 							<p className="text-sm">{project.description}</p>
 						</div>
-					</div>
+					</Link>
 				))}
 			</div>
 		</section>
