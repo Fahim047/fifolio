@@ -1,6 +1,9 @@
+import data from '@/data/data.json';
+import Image from 'next/image';
 import Link from 'next/link';
 import { HiArrowRight } from 'react-icons/hi';
 const FeaturedProjects = () => {
+	const { featuredProjects } = data;
 	return (
 		<section className="mt-12">
 			<div className="flex flex-wrap gap-4 justify-between items-center">
@@ -18,20 +21,31 @@ const FeaturedProjects = () => {
 				</Link>
 			</div>
 			<div className="my-6">
-				<div className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer">
+				{/* <div className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer">
 					<img src="/rinterio.png" alt="" className="size-12 rounded-md" />
 					<div>
 						<h3 className="font-bold mb-2">Rinterio</h3>
 						<p className="text-sm">A home decorating website</p>
 					</div>
-				</div>
-				<div className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer">
-					<img src="/bookify.png" alt="" className="size-12 rounded-md" />
-					<div>
-						<h3 className="font-bold mb-2">Bookify</h3>
-						<p className="text-sm">A fully functional hotel booking platform</p>
+				</div> */}
+				{featuredProjects.map((project) => (
+					<div
+						key={project.id}
+						className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
+					>
+						<Image
+							src={project.thumbnail}
+							alt=""
+							width={48}
+							height={48}
+							className="size-12 rounded-md"
+						/>
+						<div>
+							<h3 className="font-bold mb-2">{project.title}</h3>
+							<p className="text-sm">{project.description}</p>
+						</div>
 					</div>
-				</div>
+				))}
 			</div>
 		</section>
 	);

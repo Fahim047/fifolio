@@ -1,5 +1,203 @@
-const About = () => {
-	return <p>hello</p>;
-};
+import data from '@/data/data.json';
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+export default function AboutPage() {
+	return (
+		<main className="min-h-screen text-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+			{/* About Section */}
+			<section className="max-w-4xl mx-auto space-y-6">
+				<h1 className="text-2xl font-semibold text-blue-300">About</h1>
 
-export default About;
+				<div className="space-y-4">
+					<p className="text-lg">
+						👋 Hey there! I&apos;m Fahimul Islam, a full-stack web developer{' '}
+						<span className="text-blue-400 hover:underline">Bangladesh</span>{' '}
+						with over two (2) years of experience.
+					</p>
+
+					<p className="text-gray-400">
+						I focus on details and I&apos;m passionate about crafting web
+						applications that look great and are both accessible and easy to
+						maintain.
+					</p>
+				</div>
+
+				<div className="relative h-[300px] w-full rounded-lg overflow-hidden">
+					<Image
+						src="/placeholder.svg?height=300&width=600"
+						alt=""
+						fill
+						className="object-cover"
+					/>
+					<div className="absolute bottom-0 left-0 right-0 p-2 bg-black/60 text-sm text-center">
+						&copy; 2023 Fahimul Islam
+					</div>
+				</div>
+
+				<div className="space-y-4">
+					<p className="text-gray-400">
+						I&apos;m a huge advocate for open source and collaborating with the
+						community. You can find my stash of websites, libraries, and apps on{' '}
+						<Link href="#" className="text-blue-400 hover:underline">
+							GitHub
+						</Link>{' '}
+						which have earned over 2K stars.
+					</p>
+
+					<p className="text-gray-400">
+						I&apos;m all about diving into challenges improving and expanding my
+						skillset and I thrive in globally-remote teams that value people and
+						embrace trust, kindness, and inclusion.
+					</p>
+				</div>
+
+				<div className="pt-6">
+					<h2 className="text-lg font-semibold mb-4">Let&apos;s connect!</h2>
+					<div className="flex space-x-4">
+						<Link
+							href="#"
+							className="text-gray-400 hover:text-white transition-colors"
+						>
+							<Github className="h-6 w-6" />
+							<span className="sr-only">GitHub</span>
+						</Link>
+						<Link
+							href="#"
+							className="text-gray-400 hover:text-white transition-colors"
+						>
+							<Linkedin className="h-6 w-6" />
+							<span className="sr-only">LinkedIn</span>
+						</Link>
+						<Link
+							href="#"
+							className="text-gray-400 hover:text-white transition-colors"
+						>
+							<Twitter className="h-6 w-6" />
+							<span className="sr-only">Twitter</span>
+						</Link>
+						<Link
+							href="#"
+							className="text-gray-400 hover:text-white transition-colors"
+						>
+							<Mail className="h-6 w-6" />
+							<span className="sr-only">Email</span>
+						</Link>
+					</div>
+				</div>
+			</section>
+
+			{/* Skills Section */}
+			<section className="max-w-4xl mx-auto mt-16">
+				<h2 className="text-2xl font-semibold mb-6">Skills</h2>
+				<div className="flex flex-wrap gap-2">
+					{[
+						'TypeScript',
+						'JavaScript',
+						'Jest',
+						'React',
+						'Next.js',
+						'Styled Components',
+						'Tailwind CSS',
+						'HTML5',
+						'CSS3',
+						'Android',
+						'Kotlin',
+						'Node.js',
+						'MongoDB',
+						'Express',
+						'Git',
+						'Material Design',
+					].map((skill) => (
+						<span
+							key={skill}
+							className="px-3 py-1 rounded-full bg-gray-800 text-sm text-gray-300 border border-gray-700"
+						>
+							{skill}
+						</span>
+					))}
+				</div>
+			</section>
+
+			{/* Education Section */}
+			<section className="max-w-4xl mx-auto mt-16">
+				<div className="flex items-center justify-between mb-6">
+					<h2 className="text-2xl font-semibold">Education</h2>
+					<Link
+						href="#"
+						className="inline-flex items-center px-4 py-2 rounded-lg bg-gray-800 text-gray-200 hover:bg-gray-700 transition-colors"
+					>
+						Resume
+					</Link>
+				</div>
+
+				<div className="space-y-8">
+					{data?.education.map((education, index) => (
+						<div key={index} className="flex items-start space-x-4">
+							<div className="w-12 h-12 rounded-lg bg-gray-800 overflow-hidden flex-shrink-0">
+								<Image
+									src={education.logo}
+									alt={`${education.institution} logo`}
+									width={48}
+									height={48}
+									className="size-full object-cover"
+								/>
+							</div>
+							<div className="flex-1">
+								<h3 className="font-medium text-lg">{education.institution}</h3>
+								<p className="text-gray-400">{education.degree}</p>
+								<p className="text-sm text-gray-500">{education.period}</p>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+
+			{/* Activity Section */}
+			<section className="max-w-4xl mx-auto mt-16">
+				<h2 className="text-2xl font-semibold mb-6">Activity</h2>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<div className="p-4 rounded-lg bg-gray-800/50 border border-gray-700">
+						<div className="flex items-start space-x-4">
+							<div className="w-16 h-16 rounded bg-gray-700 overflow-hidden">
+								<Image
+									src="/placeholder.svg?height=64&width=64"
+									alt="Man in The Moon"
+									width={64}
+									height={64}
+									className="object-cover"
+								/>
+							</div>
+							<div>
+								<span className="text-sm text-gray-400">LAST PLAYED</span>
+								<h3 className="font-medium">Man in The Moon</h3>
+								<p className="text-sm text-gray-400">Coldplay</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="p-4 rounded-lg bg-gray-800/50 border border-gray-700">
+						<div className="flex items-start space-x-4">
+							<div className="w-16 h-16 rounded bg-gray-700 overflow-hidden">
+								<Image
+									src="/placeholder.svg?height=64&width=64"
+									alt="Engineering Management"
+									width={64}
+									height={64}
+									className="object-cover"
+								/>
+							</div>
+							<div>
+								<span className="text-sm text-gray-400">FINISHED</span>
+								<h3 className="font-medium">
+									Engineering Management for th...
+								</h3>
+								<p className="text-sm text-gray-400">Sarah Drasner</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	);
+}

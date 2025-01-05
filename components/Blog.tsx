@@ -1,8 +1,9 @@
+import data from '@/data/data.json';
+import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { HiArrowRight } from 'react-icons/hi2';
-
 const Blog = () => {
+	const { blogs } = data;
 	return (
 		<section className="mt-12">
 			<div className="flex flex-wrap gap-4 justify-between items-center">
@@ -18,27 +19,27 @@ const Blog = () => {
 				</Link>
 			</div>
 			<div className="my-6">
-				<a
-					href="https://fif.hashnode.dev/understanding-var-let-and-const-in-javascript"
-					target="_blank"
-					className="p-4 flex gap-4 hover:bg-yellow-400/30 rounded-xl duration-300"
-				>
-					<img
-						src="https://cdn.hashnode.com/res/hashnode/image/upload/v1725682691718/96816755-0d66-419b-8c65-cc4081cecda4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
-						alt=""
-						className="size-12 rounded-md object-center"
-					/>
-					<div className="space-y-1">
-						<h3 className="font-bold">
-							Understanding var, let and const in Javascript
-						</h3>
-						<p className="text-sm text-gray-200">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-							mollitia dignissimos.
-						</p>
-						<p className="text-sm text-gray-200">22 September 2024</p>
-					</div>
-				</a>
+				{blogs.map((blog) => (
+					<Link
+						key={blog.id}
+						href={blog.link}
+						target="_blank"
+						className="p-4 flex gap-4 hover:bg-yellow-400/30 rounded-xl duration-300"
+					>
+						<Image
+							src={blog.thumbnail || ''}
+							alt={blog.title}
+							width={48}
+							height={48}
+							className="size-12 rounded-md object-center"
+						/>
+						<div className="space-y-1">
+							<h3 className="font-bold">{blog.title}</h3>
+							<p className="text-sm text-gray-200">{blog.description}</p>
+							<p className="text-sm text-gray-200">22 September 2024</p>
+						</div>
+					</Link>
+				))}
 			</div>
 		</section>
 	);

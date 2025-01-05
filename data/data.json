@@ -4,11 +4,12 @@
 		"title": "Full Stack Developer",
 		"email": "fahimulislam58@gmail.com",
 		"phone": "+8801521578288",
-		"location": "New York, USA",
+		"location": "Manikganj, Bangladesh",
 		"bio": "Passionate developer with over 5 years of experience building full-stack applications. I specialize in React, Node.js, and scalable backend systems.",
 		"socialLinks": {
 			"linkedin": "https://www.linkedin.com/in/fahimul047",
 			"github": "https://github.com/Fahim047",
+			"facebook": "https://www.facebook.com/fahimul.islam.047",
 			"twitter": "https://x.com/_fahim047",
 			"portfolio": "https://fifolio.vercel.app"
 		}
@@ -47,11 +48,11 @@
 	],
 	"education": [
 		{
-			"institution": "University of Tech",
-			"degree": "Bachelor of Science in Computer Science",
-			"startDate": "2014-09",
-			"endDate": "2018-06",
-			"location": "New York, USA",
+			"institution": "Bangabandhu Sheikh Mujibur Rahman Science and Technology University",
+			"degree": "Bachelor of Science in Computer Science And Engineering",
+			"logo": "/bsmrstu-logo.jpg",
+			"period": "2019-2024",
+			"location": "Gopalganj, Bangladesh",
 			"description": [
 				"Graduated with a 3.8 GPA.",
 				"Relevant courses: Data Structures, Algorithms, Web Development, Database Management."
@@ -60,18 +61,46 @@
 	],
 	"projects": [
 		{
-			"name": "Portfolio Website",
-			"description": "A personal portfolio website built with Next.js, showcasing my projects and experience.",
-			"techStack": ["Next.js", "Tailwind CSS", "Vercel"],
-			"githubLink": "https://github.com/Fahim047/fifolio",
-			"liveLink": "https://fifolio.vercel.app"
+			"id": 1,
+			"name": "StudyMate",
+			"description": "A assignment evaluation platform for study-related tasks. Built with React, Node.js, and MongoDB.",
+			"techStack": [
+				"React JS",
+				"Tailwind CSS",
+				"MongoDB",
+				"Node.js",
+				"Express"
+			],
+			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
+			"liveLink": "https://ph-a11-group-study-client.vercel.app"
 		},
 		{
-			"name": "Task Manager API",
-			"description": "A task management API built with Node.js and Express, offering RESTful endpoints to manage tasks.",
-			"techStack": ["Node.js", "Express", "MongoDB"],
-			"githubLink": "https://github.com/johndoe/task-manager-api",
-			"liveLink": "https://api.johndoe.dev"
+			"id": 2,
+			"name": "CrowdCube",
+			"description": "A assignment evaluation platform for study-related tasks.",
+			"techStack": [
+				"React JS",
+				"Tailwind CSS",
+				"MongoDB",
+				"Node.js",
+				"Express"
+			],
+			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
+			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/"
+		},
+		{
+			"id": 3,
+			"name": "Bookify",
+			"description": "A online hotel booking platform that allows users to search, book, and manage hotel reservations.",
+			"techStack": [
+				"React JS",
+				"Tailwind CSS",
+				"MongoDB",
+				"Node.js",
+				"Express"
+			],
+			"githubLink": "https://github.com/Fahim047/bookify",
+			"liveLink": "https://bookify-d2yy.onrender.com"
 		}
 	],
 	"testimonials": [
@@ -100,25 +129,45 @@
 	],
 	"blogs": [
 		{
-			"title": "Understanding React Hooks",
-			"description": "A deep dive into how React Hooks work and how they can improve functional components in React.",
-			"date": "2023-06-15",
-			"tags": ["React", "JavaScript", "Web Development"],
-			"link": "https://johndoe.dev/blog/understanding-react-hooks"
+			"id": 1,
+			"title": "Understanding var, let, and const in JavaScript",
+			"description": "In this blog post, we’ll explore what makes each of these keywords different, when to use them, and the best ways to use them.",
+			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1725682691718/96816755-0d66-419b-8c65-cc4081cecda4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+			"date": "2024-09-27",
+			"tags": ["JavaScript", "Web Development"],
+			"link": "https://fif.hashnode.dev/understanding-var-let-and-const-in-javascript"
 		},
 		{
-			"title": "Building Scalable Node.js Applications",
-			"description": "Tips and techniques to build highly scalable applications using Node.js and Express.",
-			"date": "2023-09-01",
-			"tags": ["Node.js", "Backend Development", "Scalability"],
-			"link": "https://johndoe.dev/blog/building-scalable-nodejs-apps"
+			"id": 2,
+			"title": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
+			"description": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
+			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UT8LMo-wlyk/upload/a92bc838965afe6de4ad1e5fa87111e1.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+			"date": "2024-10-18",
+			"tags": ["Git", "Github", "Version Control"],
+			"link": "https://fif.hashnode.dev/manage-multiple-remote-repo-in-git-bangla"
+		}
+	],
+	"featuredProjects": [
+		{
+			"id": 1,
+			"title": "Bookify - Online Hotel Booking Platform",
+			"description": "Bookify is an online hotel booking platform that allows users to search, book, and manage hotel reservations.",
+			"thumbnail": "/bookify.png",
+			"liveLink": "https://bookify-d2yy.onrender.com"
 		},
 		{
-			"title": "Next.js vs. Gatsby: Which Should You Choose?",
-			"description": "A comparison between two popular React-based frameworks, Next.js and Gatsby, focusing on their strengths and best use cases.",
-			"date": "2024-01-10",
-			"tags": ["Next.js", "Gatsby", "Frontend Development"],
-			"link": "https://johndoe.dev/blog/nextjs-vs-gatsby"
+			"id": 2,
+			"title": "CrowdCube - A Crowdfunding Platform",
+			"description": "CrowdCube is a crowdfunding platform that allows users to create and manage crowdfunding campaigns.",
+			"thumbnail": "/crowdcube.png",
+			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/"
+		},
+		{
+			"id": 3,
+			"title": "StudyMate",
+			"description": "A assignment evaluation platform for study-related tasks.",
+			"thumbnail": "/study-mate.png",
+			"liveLink": "https://ph-a11-group-study-client.vercel.app"
 		}
 	]
 }
