@@ -1,7 +1,6 @@
+import SocialLinks from '@/components/SocialLinks';
 import data from '@/data/data.json';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 export default function AboutPage() {
 	return (
 		<main className="min-h-screen text-gray-200 py-12 px-4 sm:px-6 lg:px-8">
@@ -24,18 +23,13 @@ export default function AboutPage() {
 				</div>
 
 				<div className="relative h-[300px] w-full rounded-lg overflow-hidden">
-					<Image
-						src="/placeholder.svg?height=300&width=600"
-						alt=""
-						fill
-						className="object-cover"
-					/>
+					<Image src="/fif.jpeg" alt="" fill className="object-scale-down" />
 					<div className="absolute bottom-0 left-0 right-0 p-2 bg-black/60 text-sm text-center">
 						&copy; 2023 Fahimul Islam
 					</div>
 				</div>
 
-				<div className="space-y-4">
+				{/* <div className="space-y-4">
 					<p className="text-gray-400">
 						I&apos;m a huge advocate for open source and collaborating with the
 						community. You can find my stash of websites, libraries, and apps on{' '}
@@ -50,64 +44,31 @@ export default function AboutPage() {
 						skillset and I thrive in globally-remote teams that value people and
 						embrace trust, kindness, and inclusion.
 					</p>
-				</div>
+				</div> */}
 
 				<div className="pt-6">
 					<h2 className="text-lg font-semibold mb-4">Let&apos;s connect!</h2>
-					<div className="flex space-x-4">
-						<Link
-							href="#"
-							className="text-gray-400 hover:text-white transition-colors"
-						>
-							<Github className="h-6 w-6" />
-							<span className="sr-only">GitHub</span>
-						</Link>
-						<Link
-							href="#"
-							className="text-gray-400 hover:text-white transition-colors"
-						>
-							<Linkedin className="h-6 w-6" />
-							<span className="sr-only">LinkedIn</span>
-						</Link>
-						<Link
-							href="#"
-							className="text-gray-400 hover:text-white transition-colors"
-						>
-							<Twitter className="h-6 w-6" />
-							<span className="sr-only">Twitter</span>
-						</Link>
-						<Link
-							href="#"
-							className="text-gray-400 hover:text-white transition-colors"
-						>
-							<Mail className="h-6 w-6" />
-							<span className="sr-only">Email</span>
-						</Link>
-					</div>
+					<SocialLinks />
 				</div>
 			</section>
 
 			{/* Skills Section */}
-			<section className="max-w-4xl mx-auto mt-16">
+			<section className="max-w-4xl mx-auto mt-12">
 				<h2 className="text-2xl font-semibold mb-6">Skills</h2>
 				<div className="flex flex-wrap gap-2">
 					{[
 						'TypeScript',
 						'JavaScript',
-						'Jest',
 						'React',
 						'Next.js',
 						'Styled Components',
 						'Tailwind CSS',
 						'HTML5',
 						'CSS3',
-						'Android',
-						'Kotlin',
 						'Node.js',
 						'MongoDB',
 						'Express',
 						'Git',
-						'Material Design',
 					].map((skill) => (
 						<span
 							key={skill}
@@ -120,18 +81,20 @@ export default function AboutPage() {
 			</section>
 
 			{/* Education Section */}
-			<section className="max-w-4xl mx-auto mt-16">
+			<section className="max-w-4xl mx-auto mt-12">
 				<div className="flex items-center justify-between mb-6">
 					<h2 className="text-2xl font-semibold">Education</h2>
-					<Link
-						href="#"
+					{/* <Link
+						href="/resume.pdf"
+						target="_blank"
+						referrerPolicy="no-referrer"
 						className="inline-flex items-center px-4 py-2 rounded-lg bg-gray-800 text-gray-200 hover:bg-gray-700 transition-colors"
 					>
 						Resume
-					</Link>
+					</Link> */}
 				</div>
 
-				<div className="space-y-8">
+				<div className="space-y-6">
 					{data?.education.map((education, index) => (
 						<div key={index} className="flex items-start space-x-4">
 							<div className="w-12 h-12 rounded-lg bg-gray-800 overflow-hidden flex-shrink-0">
@@ -154,7 +117,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* Activity Section */}
-			<section className="max-w-4xl mx-auto mt-16">
+			{/* <section className="max-w-4xl mx-auto mt-16">
 				<h2 className="text-2xl font-semibold mb-6">Activity</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 					<div className="p-4 rounded-lg bg-gray-800/50 border border-gray-700">
@@ -197,7 +160,7 @@ export default function AboutPage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</main>
 	);
 }

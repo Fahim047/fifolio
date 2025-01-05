@@ -74,10 +74,10 @@ const ContactPage = () => {
 							<div className="flex items-center">
 								<EnvelopeIcon className="h-5 w-5 text-blue-400 mr-3" />
 								<a
-									href="mailto:contact@example.com"
+									href="mailto:fahimulislam58@gmail.com"
 									className="text-gray-300 hover:text-blue-400 transition"
 								>
-									contact@example.com
+									fahimulislam58@gmail.com
 								</a>
 							</div>
 							<div className="flex items-center">
@@ -86,30 +86,8 @@ const ContactPage = () => {
 									href="tel:+11234567890"
 									className="text-gray-300 hover:text-blue-400 transition"
 								>
-									+1 (123) 456-7890
+									+8801521578288
 								</a>
-							</div>
-						</div>
-						<div className="mt-8">
-							<h4 className="text-xl font-medium text-blue-400 mb-4">
-								Connect with Me
-							</h4>
-							<div className="flex space-x-6">
-								{[
-									{ name: 'GitHub', url: 'https://github.com' },
-									{ name: 'LinkedIn', url: 'https://linkedin.com' },
-									{ name: 'Twitter', url: 'https://twitter.com' },
-								].map((platform) => (
-									<a
-										key={platform.name}
-										href={platform.url}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-gray-300 hover:text-blue-400 transition duration-300"
-									>
-										{platform.name}
-									</a>
-								))}
 							</div>
 						</div>
 					</div>

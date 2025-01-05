@@ -1,11 +1,14 @@
+import MyPhoto from '@/public/fif-transparent.png';
+import Image from 'next/image';
+import Link from 'next/link';
 import { FaDownload } from 'react-icons/fa';
 import SocialLinks from './SocialLinks';
 const Banner = () => {
 	return (
 		<section className="wrapper md:flex md:items-end md:gap-6 space-y-6">
-			<img
+			<Image
 				className="max-w-[240px] mx-auto"
-				src="/fif-transparent.png"
+				src={MyPhoto}
 				alt="a portrait of Fahimul Islam"
 			/>
 			<div className="space-y-6">
@@ -26,16 +29,18 @@ const Banner = () => {
 					</p>
 				</div>
 				<div className="flex flex-col md:flex-row md:items-center gap-4">
-					<a
+					<Link
+						href="/resume.pdf"
 						className="bg-transparent hover:bg-blue-500 border hover:border-transparent border-blue-500 duration-300 px-4 py-2 rounded-lg text-[15px] text-slate-100 hover:text-[#0C121e]   flex items-center justify-center gap-2"
-						href="/about"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<span>
 							{/* <HiArrowDownTray /> */}
 							<FaDownload />
 						</span>
 						<span>Resume</span>
-					</a>
+					</Link>
 					<SocialLinks />
 				</div>
 			</div>
