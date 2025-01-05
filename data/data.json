@@ -62,8 +62,9 @@
 	"projects": [
 		{
 			"id": 1,
-			"name": "StudyMate",
+			"title": "StudyMate",
 			"description": "A assignment evaluation platform for study-related tasks. Built with React, Node.js, and MongoDB.",
+			"thumbnail": "/study-mate.png",
 			"techStack": [
 				"React JS",
 				"Tailwind CSS",
@@ -76,8 +77,9 @@
 		},
 		{
 			"id": 2,
-			"name": "CrowdCube",
+			"title": "CrowdCube",
 			"description": "A assignment evaluation platform for study-related tasks.",
+			"thumbnail": "/crowdcube.png",
 			"techStack": [
 				"React JS",
 				"Tailwind CSS",
@@ -90,8 +92,9 @@
 		},
 		{
 			"id": 3,
-			"name": "Bookify",
+			"title": "Bookify",
 			"description": "A online hotel booking platform that allows users to search, book, and manage hotel reservations.",
+			"thumbnail": "/bookify.png",
 			"techStack": [
 				"React JS",
 				"Tailwind CSS",
