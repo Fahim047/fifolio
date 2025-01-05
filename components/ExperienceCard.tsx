@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const ExperienceCard = ({ job }) => {
 	return (
 		<div key={index} className="flex items-start space-x-4">
