@@ -41,7 +41,7 @@ const Projects = () => {
 								<ExternalLink className="w-4 h-4" />
 							</Link>
 							<Link
-								href="#"
+								href={`/projects/${project.id}`}
 								className="bg-[#22232b] px-4 py-2 rounded-md hover:bg-[#2a2b35] transition-colors duration-200 text-sm flex items-center gap-1"
 							>
 								Details

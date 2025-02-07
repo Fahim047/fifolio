@@ -23,10 +23,8 @@ const FeaturedProjects = () => {
 			<div className="my-6">
 				{featuredProjects.map((project) => (
 					<Link
-						href={project.liveLink}
+						href={`/projects/${project.id}`}
 						key={project.id}
-						target="_blank"
-						rel="noopener noreferrer"
 						className="p-4 flex items-center gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
 					>
 						<Image

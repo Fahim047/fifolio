@@ -73,7 +73,14 @@
 				"Express"
 			],
 			"githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
-			"liveLink": "https://tutorlane.vercel.app/"
+			"liveLink": "https://tutorlane.vercel.app/",
+			"challenges": [
+				"Handling role based authentication was new to me. Thus it was a challenge but I enjoyed it."
+			],
+			"improvements": [
+				"Stripe Payment  gateway should be implemented.",
+				"Dashboard layout can be more user-friendly."
+			]
 		},
 		{
 			"id": 1,
@@ -88,7 +95,9 @@
 				"Express"
 			],
 			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
-			"liveLink": "https://ph-a11-group-study-client.vercel.app"
+			"liveLink": "https://ph-a11-group-study-client.vercel.app",
+			"challenges": ["Handling complex state management was a challenge."],
+			"improvements": ["File upload feature should be implemented."]
 		},
 		{
 			"id": 2,
@@ -103,7 +112,13 @@
 				"Express"
 			],
 			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
-			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/"
+			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/",
+			"challenges": [
+				"Handling form validation and numeric input was a challenge."
+			],
+			"improvements": [
+				"Implement a real payment gateway such as Stripe or SSL Commerz."
+			]
 		},
 		{
 			"id": 3,
@@ -118,7 +133,12 @@
 				"Express"
 			],
 			"githubLink": "https://github.com/Fahim047/bookify",
-			"liveLink": "https://bookify-d2yy.onrender.com"
+			"liveLink": "https://bookify-d2yy.onrender.com",
+			"challenges": [
+				"Implementing SSL Commerz payment gateway was a real pain!",
+				"Optimizing database queries to improve performance."
+			],
+			"improvements": ["Redesigning the UI/UX to make it more user-friendly."]
 		}
 	],
 	"testimonials": [
