@@ -1,8 +1,8 @@
+import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import './globals.css';
 import Navbar from '../components/Navbar';
-import Footer from '@/components/Footer';
+import './globals.css';
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -37,7 +37,7 @@ export default function RootLayout({
 							background:
 								'linear-gradient(90deg, rgb(12, 18, 30), rgba(12, 18, 30, 0.9))',
 						}}
-						className="py-4 sticky top-0 drop-shadow-md"
+						className="py-4 sticky top-0 drop-shadow-md z-[999]"
 					>
 						<Navbar />
 					</header>

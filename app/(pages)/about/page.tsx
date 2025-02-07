@@ -10,7 +10,8 @@ export default function AboutPage() {
 
 				<div className="space-y-4">
 					<p className="text-lg">
-						👋 Hey there! I&apos;m Fahimul Islam, a full-stack web developer{' '}
+						👋 Hey there! I&apos;m Fahimul Islam, a full-stack web developer
+						from{' '}
 						<span className="text-blue-400 hover:underline">Bangladesh</span>{' '}
 						with over two (2) years of experience.
 					</p>
@@ -57,18 +58,21 @@ export default function AboutPage() {
 				<h2 className="text-2xl font-semibold mb-6">Skills</h2>
 				<div className="flex flex-wrap gap-2">
 					{[
-						'TypeScript',
-						'JavaScript',
-						'React',
-						'Next.js',
-						'Styled Components',
-						'Tailwind CSS',
 						'HTML5',
 						'CSS3',
+						'Tailwind CSS',
+						'JavaScript',
+						'TypeScript',
+						'Golang',
+						'Python',
+						'C',
+						'C++',
+						'Git',
+						'React',
+						'Next.js',
 						'Node.js',
 						'MongoDB',
 						'Express',
-						'Git',
 					].map((skill) => (
 						<span
 							key={skill}
@@ -97,12 +101,12 @@ export default function AboutPage() {
 				<div className="space-y-6">
 					{data?.education.map((education, index) => (
 						<div key={index} className="flex items-start space-x-4">
-							<div className="w-12 h-12 rounded-lg bg-gray-800 overflow-hidden flex-shrink-0">
+							<div className="size-24 rounded-lg bg-gray-800 overflow-hidden flex-shrink-0">
 								<Image
 									src={education.logo}
 									alt={`${education.institution} logo`}
-									width={48}
-									height={48}
+									width={600}
+									height={500}
 									className="size-full object-cover"
 								/>
 							</div>

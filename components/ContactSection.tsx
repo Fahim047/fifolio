@@ -23,7 +23,7 @@ const ContactSection = () => {
 									id="name"
 									name="name"
 									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-									placeholder="Your Name"
+									placeholder="Enter your name"
 								/>
 							</div>
 							<div>
@@ -38,7 +38,7 @@ const ContactSection = () => {
 									id="email"
 									name="email"
 									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-									placeholder="your@email.com"
+									placeholder="Enter your email address"
 								/>
 							</div>
 							<div>

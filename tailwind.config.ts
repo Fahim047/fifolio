@@ -11,6 +11,9 @@ const config: Config = {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
+				primary: '#4d8af0',
+				'primary-hover': '#3b82f6',
+				secondary: '#9295A4',
 			},
 		},
 	},

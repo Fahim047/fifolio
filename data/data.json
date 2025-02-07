@@ -61,6 +61,21 @@
 	],
 	"projects": [
 		{
+			"id": 4,
+			"title": "Tutorlane",
+			"description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
+			"thumbnail": "/tutorlane.png",
+			"techStack": [
+				"React JS",
+				"Tailwind CSS",
+				"MongoDB",
+				"Node.js",
+				"Express"
+			],
+			"githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
+			"liveLink": "https://tutorlane.vercel.app/"
+		},
+		{
 			"id": 1,
 			"title": "StudyMate",
 			"description": "A assignment evaluation platform for study-related tasks. Built with React, Node.js, and MongoDB.",
@@ -143,7 +158,7 @@
 		{
 			"id": 2,
 			"title": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
-			"description": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
+			"description": "এই ব্লগ পোস্টে আমরা জানবো, কিভাবে গিটে একাধিক রিমোট ম্যানেজ করা যায়",
 			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UT8LMo-wlyk/upload/a92bc838965afe6de4ad1e5fa87111e1.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
 			"date": "2024-10-18",
 			"tags": ["Git", "Github", "Version Control"],
@@ -151,6 +166,21 @@
 		}
 	],
 	"featuredProjects": [
+		{
+			"id": 4,
+			"title": "Tutorlane",
+			"description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
+			"thumbnail": "/tutorlane.png",
+			"techStack": [
+				"React JS",
+				"Tailwind CSS",
+				"MongoDB",
+				"Node.js",
+				"Express"
+			],
+			"githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
+			"liveLink": "https://tutorlane.vercel.app/"
+		},
 		{
 			"id": 1,
 			"title": "Bookify - Online Hotel Booking Platform",

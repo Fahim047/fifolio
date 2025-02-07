@@ -22,7 +22,7 @@ const Navbar = () => {
 					<span>
 						<HiCodeBracket />
 					</span>
-					FIF
+					Fahim
 				</Link>
 				<div className="flex items-center gap-6">
 					<ul className="hidden md:flex items-center gap-6 font-bold">

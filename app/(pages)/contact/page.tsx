@@ -25,7 +25,7 @@ const ContactPage = () => {
 									id="name"
 									name="name"
 									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-									placeholder="Your Name"
+									placeholder="Enter your name"
 								/>
 							</div>
 							<div>
@@ -40,7 +40,7 @@ const ContactPage = () => {
 									id="email"
 									name="email"
 									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-									placeholder="your@email.com"
+									placeholder="Enter your email address"
 								/>
 							</div>
 							<div>
@@ -83,7 +83,7 @@ const ContactPage = () => {
 							<div className="flex items-center">
 								<PhoneIcon className="h-5 w-5 text-blue-400 mr-3" />
 								<a
-									href="tel:+11234567890"
+									href="tel:+8801521578288"
 									className="text-gray-300 hover:text-blue-400 transition"
 								>
 									+8801521578288

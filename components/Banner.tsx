@@ -19,8 +19,8 @@ const Banner = () => {
 				<div className="space-y-2">
 					<p className="font-bold">
 						Passionate full-stack web developer with a huge love for{' '}
-						<span className="text-yellow-300 font-bold">JavaScript</span> and{' '}
-						<span className="text-blue-300">Golang</span>.
+						<span className="text-yellow-300 font-bold">JavaScript.</span>
+						{/* and{' '}<span className="text-blue-300">Golang</span>. */}
 					</p>
 					<p>
 						I create modern, responsive and high-performance applications using

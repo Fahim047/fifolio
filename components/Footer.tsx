@@ -6,7 +6,7 @@ import SocialLinks from './SocialLinks';
 const Footer = () => {
 	return (
 		<div className="max-w-3xl mx-auto relative">
-			<div className="py-4 border-t-2 border-gray-100/10 grid md:grid-cols-2  gap-6">
+			<div className="py-4 border-t-2 border-gray-100/10 grid md:grid-cols-2 gap-6">
 				<div className="space-y-4">
 					<Link
 						href="/"
@@ -15,11 +15,12 @@ const Footer = () => {
 						<span>
 							<HiCodeBracket />
 						</span>
-						Fahimul
+						Fahim
 					</Link>
-					<p className="leading-6 text-gray-300">
-						Passionate full-stack web developer with a huge love for JavaScript
-						and Golang.
+					<p className="text-secondary">
+						Passionate full-stack web developer with a huge love for{' '}
+						<span className="text-yellow-300 font-bold">JavaScript.</span>
+						{/* and Golang. */}
 					</p>
 					<SocialLinks />
 				</div>

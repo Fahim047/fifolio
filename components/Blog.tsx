@@ -1,14 +1,13 @@
 import data from '@/data/data.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HiArrowRight } from 'react-icons/hi2';
 const Blog = () => {
 	const { blogs } = data;
 	return (
 		<section className="mt-12">
 			<div className="flex flex-wrap gap-4 justify-between items-center">
 				<h2 className="text-2xl font-bold text-red-400">From the blog</h2>
-				<Link
+				{/* <Link
 					href="/blogs"
 					className="bg-blue-400 hover:bg-blue-500 duration-300 px-4 py-2 rounded-lg text-[15px] text-[#0C121e] font-medium flex items-center justify-center gap-2"
 				>
@@ -16,7 +15,7 @@ const Blog = () => {
 						<HiArrowRight />
 					</span>
 					<span>View all</span>
-				</Link>
+				</Link> */}
 			</div>
 			<div className="my-6">
 				{blogs.map((blog) => (
@@ -29,14 +28,15 @@ const Blog = () => {
 						<Image
 							src={blog.thumbnail || ''}
 							alt={blog.title}
-							width={48}
-							height={48}
-							className="size-12 rounded-md object-center"
+							width={1920}
+							height={1080}
+							quality={100}
+							className="size-16 rounded-md object-center"
 						/>
 						<div className="space-y-1">
 							<h3 className="font-bold">{blog.title}</h3>
-							<p className="text-sm text-gray-200">{blog.description}</p>
-							<p className="text-sm text-gray-200">22 September 2024</p>
+							{/* <p className="text-sm text-gray-200">{blog.description}</p> */}
+							<p className="text-sm text-secondary">22 September 2024</p>
 						</div>
 					</Link>
 				))}

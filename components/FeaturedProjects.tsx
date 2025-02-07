@@ -5,7 +5,7 @@ import { HiArrowRight } from 'react-icons/hi';
 const FeaturedProjects = () => {
 	const { featuredProjects } = data;
 	return (
-		<section className="mt-12">
+		<section className="py-12">
 			<div className="flex flex-wrap gap-4 justify-between items-center">
 				<h2 className="text-2xl font-bold text-yellow-400">
 					Featured Projects
@@ -21,27 +21,20 @@ const FeaturedProjects = () => {
 				</Link>
 			</div>
 			<div className="my-6">
-				{/* <div className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer">
-					<img src="/rinterio.png" alt="" className="size-12 rounded-md" />
-					<div>
-						<h3 className="font-bold mb-2">Rinterio</h3>
-						<p className="text-sm">A home decorating website</p>
-					</div>
-				</div> */}
 				{featuredProjects.map((project) => (
 					<Link
 						href={project.liveLink}
 						key={project.id}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="p-4 flex gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
+						className="p-4 flex items-center gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 cursor-pointer"
 					>
 						<Image
 							src={project.thumbnail}
 							alt=""
-							width={48}
-							height={48}
-							className="size-12 rounded-md"
+							width={1000}
+							height={1000}
+							className="size-20 object-cover rounded-md"
 						/>
 						<div>
 							<h3 className="font-bold mb-2">{project.title}</h3>

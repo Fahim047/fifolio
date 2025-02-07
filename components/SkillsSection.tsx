@@ -1,24 +1,19 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { IconType } from 'react-icons';
 import {
 	SiCss3,
-	// SiCypress,
-	SiDocker,
 	SiExpress,
 	SiFirebase,
 	SiGit,
-	// SiGraphql,
+	SiGo,
 	SiHtml5,
 	SiJavascript,
-	// SiJest,
 	SiMongodb,
 	SiNextdotjs,
 	SiNodedotjs,
-	// SiPostgresql,
 	SiReact,
-	SiSass,
 	SiTailwindcss,
 	SiTypescript,
 } from 'react-icons/si';
@@ -29,79 +24,40 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-	{ name: 'TypeScript', icon: SiTypescript },
+	{ name: 'HTML5', icon: SiHtml5 },
+	{ name: 'CSS3', icon: SiCss3 },
+	{ name: 'Tailwind CSS', icon: SiTailwindcss },
 	{ name: 'JavaScript', icon: SiJavascript },
+	{ name: 'TypeScript', icon: SiTypescript },
 	{ name: 'React', icon: SiReact },
 	{ name: 'Next.js', icon: SiNextdotjs },
 	{ name: 'Node.js', icon: SiNodedotjs },
 	{ name: 'Express', icon: SiExpress },
 	{ name: 'MongoDB', icon: SiMongodb },
-	// { name: 'PostgreSQL', icon: SiPostgresql },
-	// { name: 'GraphQL', icon: SiGraphql },
-	// { name: 'REST API', icon: SiOpenai },
-	{ name: 'HTML5', icon: SiHtml5 },
-	{ name: 'CSS3', icon: SiCss3 },
-	{ name: 'Tailwind CSS', icon: SiTailwindcss },
-	{ name: 'Sass', icon: SiSass },
+	// { name: 'Sass', icon: SiSass },
 	{ name: 'Git', icon: SiGit },
-	{ name: 'Docker', icon: SiDocker },
 	{ name: 'Firebase', icon: SiFirebase },
-	// { name: 'Jest', icon: SiJest },
-	// { name: 'Cypress', icon: SiCypress },
+	{ name: 'Go', icon: SiGo },
+	// { name: 'Docker', icon: SiDocker },
 ];
 
 const SkillsSection: React.FC = () => {
-	const marqueeRef = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		const marquee = marqueeRef.current;
-		if (!marquee) return;
-
-		let animationId: number;
-		let start: number;
-
-		const step = (timestamp: number) => {
-			if (start === undefined) {
-				start = timestamp;
-			}
-			const elapsed = timestamp - start;
-			marquee.style.transform = `translateX(${-elapsed / 20}px)`;
-
-			if (marquee.getBoundingClientRect().right < 0) {
-				start = timestamp;
-				marquee.style.transform = 'translateX(100%)';
-			}
-
-			animationId = requestAnimationFrame(step);
-		};
-
-		animationId = requestAnimationFrame(step);
-
-		return () => cancelAnimationFrame(animationId);
-	}, []);
-
 	return (
-		<section className="py-12 overflow-hidden">
-			<div className="container mx-auto px-4">
+		<section className="py-12">
+			<div className="container mx-auto">
 				<h2 className="text-2xl font-bold text-center text-blue-400 mb-8">
 					My Skills
 				</h2>
-				<div className="relative">
-					<div
-						ref={marqueeRef}
-						className="flex space-x-4 whitespace-nowrap"
-						style={{ willChange: 'transform' }}
-					>
-						{skills.concat(skills).map((skill, index) => (
-							<div
-								key={index}
-								className="inline-flex items-center justify-center px-4 py-2 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-full text-white font-medium text-sm space-x-2"
-							>
-								<skill.icon className="w-5 h-5" />
-								<span>{skill.name}</span>
-							</div>
-						))}
-					</div>
+				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+					{skills.map((skill, index) => (
+						<div
+							key={index}
+							className="flex flex-col items-center justify-center p-2 bg-primary bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg text-white font-medium text-sm hover:bg-opacity-20 duration-300 aspect-square"
+						>
+							<skill.icon className="size-10 mb-2" />
+							<span className="text-secondary">{skill.name}</span>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>
