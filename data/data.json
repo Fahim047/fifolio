@@ -183,6 +183,30 @@
 			"date": "2024-10-18",
 			"tags": ["Git", "Github", "Version Control"],
 			"link": "https://fif.hashnode.dev/manage-multiple-remote-repo-in-git-bangla"
+		},
+		{
+			"id": 4,
+			"title": "A Simple Guide to Pointers in Go",
+			"description": "পয়েন্টার (Pointer) হচ্ছে এমন একটি ভেরিয়েবল, যা অন্য একটি ভেরিয়েবলের মেমরি এড্রেস ধরে রাখে। সহজ ভাষায়, এটি মেমরির রেফারেন্স রাখে এবং এর মাধ্যমে মূল ডাটা নিয়ে কাজ করা যায়।",
+			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1742575767912/6e01e518-5f67-4fde-bc6c-92809d779972.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+			"date": "2025-03-21",
+			"tags": ["Go", "Pointers", "Memory Management"],
+			"link": "https://fif.hashnode.dev/a-simple-guide-to-pointers-in-golang"
+		},
+		{
+			"id": 4,
+			"title": "Higher-Order Functions, Callbacks, and First-Class Citizens in Go (Golang): A Complete Guide",
+			"description": "Hello readers! Today, we’re diving into some fundamental concepts of Go (Golang) that are not only essential for mastering the language but also widely applicable in other programming languages. Whether you’re a beginner or an experienced developer, understanding these concepts will help you write more flexible, reusable, and efficient code. Let’s get started!",
+			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1739033396744/3e9494db-1c53-4ace-a243-2a2c25ee8801.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+			"date": "2025-02-08",
+			"tags": [
+				"Go",
+				"First Order Functions",
+				"Higher Order Functions",
+				"First Class Citizens",
+				"Callback Functions"
+			],
+			"link": "https://fif.hashnode.dev/higher-order-functions-callbacks-and-first-class-citizens-in-go-golang-a-complete-guide"
 		}
 	],
 	"featuredProjects": [

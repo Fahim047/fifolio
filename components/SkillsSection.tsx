@@ -3,10 +3,13 @@
 import React from 'react';
 import { IconType } from 'react-icons';
 import {
+	SiAngular,
 	SiCss3,
+	SiDocker,
 	SiExpress,
 	SiFirebase,
 	SiGit,
+	SiGithub,
 	SiGo,
 	SiHtml5,
 	SiJavascript,
@@ -36,9 +39,11 @@ const skills: Skill[] = [
 	{ name: 'MongoDB', icon: SiMongodb },
 	// { name: 'Sass', icon: SiSass },
 	{ name: 'Git', icon: SiGit },
+	{ name: 'Github', icon: SiGithub },
 	{ name: 'Firebase', icon: SiFirebase },
 	{ name: 'Go', icon: SiGo },
-	// { name: 'Docker', icon: SiDocker },
+	{ name: 'Angular', icon: SiAngular },
+	{ name: 'Docker', icon: SiDocker },
 ];
 
 const SkillsSection: React.FC = () => {

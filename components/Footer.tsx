@@ -19,8 +19,8 @@ const Footer = () => {
 					</Link>
 					<p className="text-secondary">
 						Passionate full-stack web developer with a huge love for{' '}
-						<span className="text-yellow-300 font-bold">JavaScript.</span>
-						{/* and Golang. */}
+						<span className="text-yellow-300 font-bold">JavaScript </span>
+						and <span className="text-blue-300">Go</span>.
 					</p>
 					<SocialLinks />
 				</div>
