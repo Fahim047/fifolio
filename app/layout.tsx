@@ -29,16 +29,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-white`}
 			>
 				<div className="max-w-3xl mx-auto px-4">
-					<header
-						style={{
-							background:
-								'linear-gradient(90deg, rgb(12, 18, 30), rgba(12, 18, 30, 0.9))',
-						}}
-						className="py-4 sticky top-0 drop-shadow-md z-[999]"
-					>
+					<header className="py-4 bg-transparent sticky top-0 drop-shadow-md z-[999]">
 						<Navbar />
 					</header>
 					<main className="mt-2 min-h-[500px]">{children}</main>

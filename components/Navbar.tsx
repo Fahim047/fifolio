@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	return (
 		<div className="relative">
-			<nav className="w-full px-4 py-3 bg-[#151e30] border-2 border-blue-100/10 drop-shadow-lg rounded-xl flex justify-between items-center">
+			<nav className="w-full px-4 py-3 bg-primary text-white border-2 border-blue-100/10 drop-shadow-lg rounded-xl flex justify-between items-center">
 				<Link
 					href="/"
 					className="text-xl font-bold text-blue-400 flex items-center justify-center gap-1"
@@ -25,29 +25,29 @@ const Navbar = () => {
 					Fahim
 				</Link>
 				<div className="flex items-center gap-6">
-					<ul className="hidden md:flex items-center gap-6 font-bold">
+					<ul className="hidden md:flex items-center gap-6 font-bold text-white">
 						<li>
-							<Link href="/about" className="hover:text-[#88a4e6] duration-300">
+							<Link href="/about" className="hover:text-blue-400 duration-300">
 								About
 							</Link>
 						</li>
 						<li>
 							<Link
 								href="/projects"
-								className="hover:text-[#88a4e6] duration-300"
+								className="hover:text-blue-400 duration-300"
 							>
 								Projects
 							</Link>
 						</li>
 						<li>
-							<Link href="/blogs" className="hover:text-[#88a4e6] duration-300">
+							<Link href="/blogs" className="hover:text-blue-400 duration-300">
 								Blogs
 							</Link>
 						</li>
 						<li>
 							<Link
 								href="/contact"
-								className="hover:text-[#88a4e6] duration-300"
+								className="hover:text-blue-400 duration-300"
 							>
 								Contact
 							</Link>

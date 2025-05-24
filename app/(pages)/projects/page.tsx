@@ -35,7 +35,7 @@ const Projects = () => {
 								href={project.liveLink}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-primary hover:text-primary-hover transition-colors duration-200 flex items-center gap-2 text-sm"
+								className="text-white hover:text-primary-hover transition-colors duration-200 flex items-center gap-2 text-sm"
 							>
 								Live Demo
 								<ExternalLink className="w-4 h-4" />

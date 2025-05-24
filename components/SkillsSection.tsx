@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { IconType } from 'react-icons';
 import {
@@ -57,7 +55,7 @@ const SkillsSection: React.FC = () => {
 					{skills.map((skill, index) => (
 						<div
 							key={index}
-							className="flex flex-col items-center justify-center p-2 bg-primary bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg text-white font-medium text-sm hover:bg-opacity-20 duration-300 aspect-square"
+							className="flex flex-col items-center justify-center p-2 bg-blue-400 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg text-white font-medium text-sm hover:bg-opacity-20 duration-300 aspect-square"
 						>
 							<skill.icon className="size-10 mb-2" />
 							<span className="text-secondary">{skill.name}</span>

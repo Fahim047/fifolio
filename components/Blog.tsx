@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Blog = () => {
 	const { blogs } = data;
 	return (
-		<section className="mt-12">
+		<section>
 			<div className="flex flex-wrap gap-4 justify-between items-center">
 				<h2 className="text-2xl font-bold text-red-400">From the blog</h2>
 				{/* <Link
