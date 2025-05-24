@@ -6,7 +6,7 @@ const ContactSection = () => {
 					Contact Me
 				</h2>
 				<div className="max-w-4xl mx-auto flex flex-col gap-8">
-					<div className="flex-1 bg-[#151e30] p-6 rounded-lg shadow-md">
+					<div className="flex-1 bg-primary p-6 rounded-lg shadow-md">
 						<h3 className="text-xl font-semibold mb-4 text-blue-400">
 							Get in Touch
 						</h3>
@@ -22,7 +22,7 @@ const ContactSection = () => {
 									type="text"
 									id="name"
 									name="name"
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
 									placeholder="Enter your name"
 								/>
 							</div>
@@ -37,7 +37,7 @@ const ContactSection = () => {
 									type="email"
 									id="email"
 									name="email"
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
 									placeholder="Enter your email address"
 								/>
 							</div>
@@ -52,19 +52,19 @@ const ContactSection = () => {
 									id="message"
 									name="message"
 									rows={4}
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
 									placeholder="Your message here..."
 								></textarea>
 							</div>
 							<button
 								type="submit"
-								className="w-full bg-blue-400 text-[#0C121e] py-2 px-4 rounded-md hover:bg-blue-500 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-300"
+								className="w-full bg-blue-400 text-[#0C121e] py-2 px-4 rounded-md hover:bg-blue-500 transition duration-300 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-blue-300"
 							>
 								Send Message
 							</button>
 						</form>
 					</div>
-					{/* <div className="bg-[#151e30] p-8 rounded-lg shadow-lg">
+					{/* <div className="bg-primary p-8 rounded-lg shadow-lg">
 						<h3 className="text-2xl font-semibold text-blue-400 mb-6">
 							Contact Information
 						</h3>

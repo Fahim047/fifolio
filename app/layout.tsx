@@ -32,7 +32,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-white`}
 			>
 				<div className="max-w-3xl mx-auto px-4">
-					<header className="py-4 bg-transparent sticky top-0 drop-shadow-md z-[999]">
+					<header className="py-4 bg-transparent sticky top-0 drop-shadow-md z-999">
 						<Navbar />
 					</header>
 					<main className="mt-2 min-h-[500px]">{children}</main>

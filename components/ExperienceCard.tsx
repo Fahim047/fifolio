@@ -3,7 +3,7 @@
 // const ExperienceCard = ({ job }) => {
 // 	return (
 // 		<div key={index} className="flex items-start space-x-4">
-// 			<div className="w-12 h-12 rounded-lg bg-gray-800 overflow-hidden flex-shrink-0">
+// 			<div className="w-12 h-12 rounded-lg bg-gray-800 overflow-hidden shrink-0">
 // 				<Image
 // 					src={job.logo}
 // 					alt={`${job.company} logo`}

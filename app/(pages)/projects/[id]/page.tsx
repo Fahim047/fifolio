@@ -37,7 +37,7 @@ const ProjectDetailsPage = ({ params }) => {
 				{projectData?.techStack?.map((tech) => (
 					<span
 						key={tech}
-						className="px-3 py-1 bg-[#151e30] text-primary rounded-full text-sm"
+						className="px-3 py-1 bg-primary text-primary rounded-full text-sm"
 					>
 						{tech}
 					</span>
@@ -70,7 +70,7 @@ const ProjectDetailsPage = ({ params }) => {
 			</div>
 
 			<div className="grid gap-8 md:grid-cols-2">
-				<div className="p-6 rounded-xl shadow-sm">
+				<div className="p-6 rounded-xl shadow-xs">
 					<h2 className="text-xl font-semibold mb-4">Challenges Faced</h2>
 					<ul className="space-y-3">
 						{projectData?.challenges?.map((challenge, index) => (
@@ -81,7 +81,7 @@ const ProjectDetailsPage = ({ params }) => {
 					</ul>
 				</div>
 
-				<div className="p-6 rounded-xl shadow-sm">
+				<div className="p-6 rounded-xl shadow-xs">
 					<h2 className="text-xl font-semibold mb-4">Future Improvements</h2>
 					<ul className="space-y-3">
 						{projectData.improvements?.map((improvement, index) => (

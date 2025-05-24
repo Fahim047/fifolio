@@ -3,7 +3,24 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { HiCodeBracket, HiMoon, HiSun } from 'react-icons/hi2';
-
+const navLinks = [
+	{
+		title: 'About',
+		path: '/about',
+	},
+	{
+		title: 'Projects',
+		path: '/projects',
+	},
+	{
+		title: 'Blogs',
+		path: '/blogs',
+	},
+	{
+		title: 'Contact',
+		path: '/contact',
+	},
+];
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,32 +43,16 @@ const Navbar = () => {
 				</Link>
 				<div className="flex items-center gap-6">
 					<ul className="hidden md:flex items-center gap-6 font-bold text-white">
-						<li>
-							<Link href="/about" className="hover:text-blue-400 duration-300">
-								About
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/projects"
-								className="hover:text-blue-400 duration-300"
-							>
-								Projects
-							</Link>
-						</li>
-						<li>
-							<Link href="/blogs" className="hover:text-blue-400 duration-300">
-								Blogs
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/contact"
-								className="hover:text-blue-400 duration-300"
-							>
-								Contact
-							</Link>
-						</li>
+						{navLinks.map((link) => (
+							<li key={link.title}>
+								<Link
+									href={link.path}
+									className="hover:text-blue-400 duration-300"
+								>
+									{link.title}
+								</Link>
+							</li>
+						))}
 					</ul>
 					<button>
 						<span className="text-2xl">
@@ -90,7 +91,7 @@ const Navbar = () => {
 			<div
 				className={`
           absolute top-full left-0 right-0 mt-2 
-          bg-[#151e30] border-2 border-blue-100/10 
+          bg-primary border-2 border-blue-100/10 
           rounded-xl overflow-hidden transition-all duration-300 ease-in-out
           md:hidden
           ${
@@ -101,42 +102,17 @@ const Navbar = () => {
         `}
 			>
 				<ul className="py-2 px-4 space-y-2">
-					<li>
-						<Link
-							href="/about"
-							className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							About
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/projects"
-							className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Projects
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/blogs"
-							className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Blogs
-						</Link>
-					</li>
-					<li>
-						<Link
-							href="/contact"
-							className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Contact
-						</Link>
-					</li>
+					{navLinks.map((link) => (
+						<li key={link.title}>
+							<Link
+								href={link.path}
+								className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								About
+							</Link>
+						</li>
+					))}
 				</ul>
 			</div>
 		</div>
