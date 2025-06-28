@@ -47,7 +47,7 @@ const skills = [
 
 export default function AboutPage() {
 	return (
-		<main className="min-h-screen text-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+		<article className="min-h-screen text-gray-200 mt-12">
 			{/* About Section */}
 			<section className="max-w-4xl mx-auto space-y-6">
 				<h1 className="text-2xl font-semibold text-blue-300">About</h1>
@@ -90,7 +90,6 @@ export default function AboutPage() {
 					</div>
 				</div>
 			</section>
-
 			{/* Skills Section */}
 			<section className="max-w-4xl mx-auto mt-12">
 				<h2 className="text-2xl font-semibold mb-6">Skills</h2>
@@ -105,7 +104,6 @@ export default function AboutPage() {
 					))}
 				</div>
 			</section>
-
 			{/* Education Section */}
 			<section className="max-w-4xl mx-auto mt-12">
 				<div className="flex items-center justify-between mb-6">
@@ -133,6 +131,6 @@ export default function AboutPage() {
 					))}
 				</div>
 			</section>
-		</main>
+		</article>
 	);
 }

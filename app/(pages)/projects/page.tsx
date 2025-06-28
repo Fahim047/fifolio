@@ -14,7 +14,7 @@ const Projects = () => {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className="p-4 flex flex-col gap-4 hover:bg-[#4d8af03d] rounded-xl duration-300 border border-secondary/10 hover:border-primary"
+						className="p-4 flex flex-col gap-4 rounded-xl duration-300 border  border-secondary/10 hover:bg-primary hover:border-blue-400"
 					>
 						<Image
 							src={project.thumbnail || ''}
@@ -35,17 +35,17 @@ const Projects = () => {
 								href={project.liveLink}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-white hover:text-primary-hover transition-colors duration-200 flex items-center gap-2 text-sm"
+								className="text-white hover:text-primary-hover transition-all duration-200 flex items-center gap-2 text-sm group"
 							>
-								Live Demo
-								<ExternalLink className="w-4 h-4" />
+								<span>Live Demo</span>
+								<ExternalLink className="w-4 h-4 group-hover:scale-115 transition-all duration-200" />
 							</Link>
 							<Link
 								href={`/projects/${project.id}`}
-								className="bg-[#22232b] px-4 py-2 rounded-md hover:bg-[#2a2b35] transition-colors duration-200 text-sm flex items-center gap-1"
+								className="bg-[#22232b] px-4 py-2 rounded-md hover:bg-[#2a2b35] transition-all duration-200 text-sm flex items-center gap-1 group"
 							>
-								Details
-								<ArrowRight className="w-4 h-4" />
+								<span>Details</span>
+								<ArrowRight className="w-4 h-4 group-hover:scale-115 transition-all duration-200" />
 							</Link>
 						</div>
 					</div>

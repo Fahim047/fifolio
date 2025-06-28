@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks';
 
 const Footer = () => {
 	return (
-		<div className="max-w-3xl mx-auto relative">
+		<footer className="max-w-3xl mx-auto relative">
 			<div className="py-4 border-t-2 border-gray-100/10 grid md:grid-cols-2 gap-6">
 				<div className="space-y-4">
 					<Link
@@ -86,7 +86,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 

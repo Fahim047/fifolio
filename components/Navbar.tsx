@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { HiCodeBracket, HiMoon, HiSun } from 'react-icons/hi2';
+import { HiBars3, HiCodeBracket, HiMoon, HiSun } from 'react-icons/hi2';
 const navLinks = [
 	{
 		title: 'About',
@@ -68,21 +68,7 @@ const Navbar = () => {
 						aria-expanded={isMenuOpen}
 						aria-label="Toggle navigation menu"
 					>
-						<svg
-							className="w-6 h-6 text-gray-800 dark:text-white"
-							xmlns="http://www.w3.org/2000/svg"
-							width={24}
-							height={24}
-							fill="none"
-							viewBox="0 0 24 24"
-						>
-							<path
-								stroke="currentColor"
-								strokeLinecap="round"
-								strokeWidth={2}
-								d="M5 7h14M5 12h14M5 17h14"
-							/>
-						</svg>
+						<HiBars3 size={24} />
 					</button>
 				</div>
 			</nav>
@@ -109,7 +95,7 @@ const Navbar = () => {
 								className="block py-2 px-4 hover:bg-blue-400/10 rounded-lg duration-300"
 								onClick={() => setIsMenuOpen(false)}
 							>
-								About
+								{link.title}
 							</Link>
 						</li>
 					))}
