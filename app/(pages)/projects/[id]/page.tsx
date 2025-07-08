@@ -14,13 +14,13 @@ const ProjectDetailsPage = ({ params }) => {
 		);
 	}
 	return (
-		<div className="max-w-4xl mx-auto py-12">
+		<div className="pt-12">
 			<Link
 				href="/projects"
 				className="inline-flex items-center text-secondary hover:text-secondary/70 mb-8"
 			>
-				<ChevronLeft className="w-4 h-4 mr-2" />
-				Back to Projects
+				<ChevronLeft className="size-5 mr-2" />
+				Back
 			</Link>
 
 			<h1 className="text-4xl font-bold mb-6">{projectData?.title}</h1>
@@ -30,25 +30,25 @@ const ProjectDetailsPage = ({ params }) => {
 				width={1920}
 				height={1080}
 				quality={100}
-				className="w-full rounded-lg mb-8"
+				className="w-full rounded-lg"
 			/>
 
-			<div className="flex flex-wrap gap-2 mb-8">
+			<div className="flex flex-wrap gap-2 mt-4">
 				{projectData?.techStack?.map((tech) => (
 					<span
 						key={tech}
-						className="px-3 py-1 bg-primary text-primary rounded-full text-sm"
+						className="px-3 py-1 bg-primary rounded-full text-sm"
 					>
 						{tech}
 					</span>
 				))}
 			</div>
 
-			<div className="prose max-w-none mb-8">
+			<div className="prose max-w-none mt-8">
 				<p className="text-secondary text-lg">{projectData.description}</p>
 			</div>
 
-			<div className="flex gap-4 mb-12">
+			<div className="mt-4 flex gap-4">
 				<Link
 					href={projectData.liveLink}
 					target="_blank"
@@ -62,35 +62,31 @@ const ProjectDetailsPage = ({ params }) => {
 					href={projectData.githubLink}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+					className="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-colors"
 				>
 					<Github className="w-4 h-4 mr-2" />
 					Source Code
 				</Link>
 			</div>
-
-			<div className="grid gap-8 md:grid-cols-2">
-				<div className="p-6 rounded-xl shadow-xs">
-					<h2 className="text-xl font-semibold mb-4">Challenges Faced</h2>
-					<ul className="space-y-3">
-						{projectData?.challenges?.map((challenge, index) => (
-							<li key={index} className="text-secondary">
-								• {challenge}
-							</li>
-						))}
-					</ul>
-				</div>
-
-				<div className="p-6 rounded-xl shadow-xs">
-					<h2 className="text-xl font-semibold mb-4">Future Improvements</h2>
-					<ul className="space-y-3">
-						{projectData.improvements?.map((improvement, index) => (
-							<li key={index} className="text-secondary">
-								• {improvement}
-							</li>
-						))}
-					</ul>
-				</div>
+			<div className="mt-8">
+				<h2 className="text-xl font-semibold mb-4">Challenges Faced</h2>
+				<ul className="space-y-4 list-disc list-outside pl-5 text-secondary">
+					{projectData?.challenges?.map((challenge, index) => (
+						<li key={index} className="leading-relaxed">
+							{challenge}
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className="mt-8">
+				<h2 className="text-xl font-semibold mb-4">Future Improvements</h2>
+				<ul className="space-y-4 list-disc list-outside pl-5 text-secondary">
+					{projectData.improvements?.map((improvement, index) => (
+						<li key={index} className="leading-relaxed">
+							{improvement}
+						</li>
+					))}
+				</ul>
 			</div>
 		</div>
 	);

@@ -14,7 +14,7 @@ const Projects = () => {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className="p-4 flex flex-col gap-4 rounded-xl duration-300 border  border-secondary/10 hover:bg-primary hover:border-blue-400"
+						className="bg-primary p-4 flex flex-col gap-4 rounded-xl duration-300 border  border-secondary/10 hover:bg-primary hover:border-blue-400"
 					>
 						<Image
 							src={project.thumbnail || ''}
