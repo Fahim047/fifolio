@@ -4,19 +4,16 @@ const ContactPage = () => {
 	return (
 		<section className="py-12">
 			<div className="container mx-auto px-4">
-				<h2 className="text-2xl font-bold text-center mb-8 text-blue-400">
-					Contact Me
+				<h2 className="text-2xl font-bold mb-8 text-emerald-400">
+					Get In Touch
 				</h2>
 				<div className="max-w-4xl mx-auto flex flex-col gap-8">
 					<div className="flex-1 bg-primary p-6 rounded-lg shadow-md">
-						<h3 className="text-xl font-semibold mb-4 text-blue-400">
-							Get in Touch
-						</h3>
-						<form className="space-y-4">
+						<form className="space-y-5">
 							<div>
 								<label
 									htmlFor="name"
-									className="block text-sm font-medium text-blue-400 mb-1"
+									className="block text-sm font-bold text-blue-400 mb-1"
 								>
 									Name
 								</label>
@@ -24,14 +21,14 @@ const ContactPage = () => {
 									type="text"
 									id="name"
 									name="name"
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
+									className="bg-transparent w-full px-3 py-2 border border-gray-600  rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
 									placeholder="Enter your name"
 								/>
 							</div>
 							<div>
 								<label
 									htmlFor="email"
-									className="block text-sm font-medium text-blue-400 mb-1"
+									className="block text-sm font-bold text-blue-400 mb-1"
 								>
 									Email
 								</label>
@@ -39,22 +36,21 @@ const ContactPage = () => {
 									type="email"
 									id="email"
 									name="email"
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
+									className="bg-transparent w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
 									placeholder="Enter your email address"
 								/>
 							</div>
 							<div>
 								<label
 									htmlFor="message"
-									className="block text-sm font-medium text-blue-400 mb-1"
+									className="block text-sm font-bold text-blue-400 mb-1"
 								>
 									Message
 								</label>
 								<textarea
 									id="message"
 									name="message"
-									rows={4}
-									className="bg-transparent w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
+									className="h-40 bg-transparent w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400 resize-none"
 									placeholder="Your message here..."
 								></textarea>
 							</div>

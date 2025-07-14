@@ -14,7 +14,9 @@ const Banner = () => {
 			<div className="space-y-6">
 				<div>
 					<p className="text-xl">Hello🖐️, folks</p>
-					<h1 className="text-3xl font-extrabold">I&apos;m Fahimul Islam</h1>
+					<h1 className="text-3xl font-extrabold">
+						I&apos;m <span className="text-blue-400">Fahimul Islam</span>
+					</h1>
 				</div>
 				<div className="space-y-2">
 					<p className="font-bold">

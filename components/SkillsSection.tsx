@@ -46,7 +46,7 @@ const skills: Skill[] = [
 
 const SkillsSection: React.FC = () => {
 	return (
-		<section className="py-12">
+		<section className="py-12 mt-12">
 			<div className="container mx-auto">
 				<h2 className="text-2xl font-bold text-center text-blue-400 mb-8">
 					My Skills
