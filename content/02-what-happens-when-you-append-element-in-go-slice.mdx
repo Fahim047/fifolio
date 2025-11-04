@@ -1,0 +1,54 @@
+---
+title: "What happens when you append element in Go slice"
+description: "Understanding the behavior of Go slices when appending elements beyond their capacity."
+author: "Fahimul Islam"
+publishedOn: "2025-06-20"
+coverImage: "https://i.ibb.co.com/tpFpkNSx/ZUhn-Ln-Bu-Zw.png"
+tags: ["go", "slices"]
+---
+
+### **What happens when you append to a slice and it exceeds its capacity?**
+
+When you use `append()` on a slice and the number of elements goes **beyond its current capacity**, Go does the following **under the hood**:
+
+---
+
+### **1. Allocates a New Underlying Array**
+
+Go automatically creates a **new, bigger array** (usually 2x the old capacity, but not always—depends on the implementation).
+
+---
+
+### **2. Copies Existing Elements**
+
+All the elements from the old slice are **copied** into the new array.
+
+---
+
+### **3. Adds the New Element**
+
+The new element is added to the new array.
+
+---
+
+### **4. Returns a New Slice**
+
+A new slice pointing to the new array is returned. The original slice is unchanged (but still points to the old array).
+
+---
+
+### **Example:**
+
+```go
+s := make([]int, 0, 2)
+s = append(s, 1, 2)
+fmt.Println(cap(s)) // 2
+
+s = append(s, 3) // Capacity exceeded
+fmt.Println(cap(s)) // Capacity 4
+
+```
+
+After that last `append()`, Go allocates a new array with larger capacity and returns a new slice pointing to it.
+
+So, when capacity is exceeded, Go handles everything for you **automatically.**
