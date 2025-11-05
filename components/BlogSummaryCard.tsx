@@ -36,7 +36,7 @@ export default function BlogSummaryCard({
         <div className="space-y-1">
           <h3 className="font-bold leading-snug">{title}</h3>
 
-          <div className="text-sm text-secondary flex flex-wrap gap-x-2 items-center">
+          <div className="text-sm text-secondary-foreground flex flex-wrap gap-x-2 items-center">
             <span>{humanizeDate(publishedOn)}</span>
 
             {author && (

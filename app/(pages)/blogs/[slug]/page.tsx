@@ -4,6 +4,8 @@ import { loadBlogPost } from "@/helpers";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { COMPONENTS_MAP } from "@/helpers";
 import TagList from "@/components/TagList";
+import { ChevronLeft } from "lucide-react";
+import Link from "next/link";
 
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
@@ -35,6 +37,13 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <article className="max-w-3xl mx-auto">
+      <Link
+        href="/blogs"
+        className="mt-6 inline-flex items-center text-muted-foreground hover:text-accent-foreground mb-8"
+      >
+        <ChevronLeft className="size-5 mr-2" />
+        Back
+      </Link>
       <BlogHero
         title={title}
         description={description}

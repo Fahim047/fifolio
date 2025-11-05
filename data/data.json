@@ -1,250 +1,279 @@
 {
-	"personalInfo": {
-		"name": "Fahimul Islam",
-		"title": "Full Stack Developer",
-		"email": "fahimulislam58@gmail.com",
-		"phone": "+8801521578288",
-		"location": "Manikganj, Bangladesh",
-		"bio": "Passionate developer with over 5 years of experience building full-stack applications. I specialize in React, Node.js, and scalable backend systems.",
-		"socialLinks": {
-			"linkedin": "https://www.linkedin.com/in/fahimul047",
-			"github": "https://github.com/Fahim047",
-			"facebook": "https://www.facebook.com/fahimul.islam.047",
-			"twitter": "https://x.com/_fahim047",
-			"portfolio": "https://fifolio.vercel.app"
-		}
-	},
-	"skills": {
-		"languages": ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
-		"frameworks": ["React", "Next.js", "Node.js", "Express", "Django"],
-		"databases": ["MongoDB", "PostgreSQL", "MySQL"],
-		"tools": ["Git", "Docker", "Jenkins", "AWS", "Webpack"]
-	},
-	"experience": [
-		{
-			"company": "TechCorp",
-			"role": "Senior Full Stack Developer",
-			"startDate": "2021-06",
-			"endDate": "Present",
-			"location": "Remote",
-			"description": [
-				"Led a team of 5 developers in building a SaaS platform using React and Node.js.",
-				"Designed and implemented RESTful APIs, optimizing database queries by 20%.",
-				"Collaborated with cross-functional teams to deliver new features."
-			]
-		},
-		{
-			"company": "WebSolutions",
-			"role": "Full Stack Developer",
-			"startDate": "2019-03",
-			"endDate": "2021-05",
-			"location": "New York, USA",
-			"description": [
-				"Developed an e-commerce platform with Next.js, improving page load speeds by 30%.",
-				"Integrated third-party payment gateways and optimized performance using server-side rendering.",
-				"Worked closely with the UI/UX team to improve user experience."
-			]
-		}
-	],
-	"education": [
-		{
-			"institution": "Gopalganj Science and Technology University",
-			"degree": "Bachelor of Science in Computer Science And Engineering",
-			"logo": "/bsmrstu-logo.jpg",
-			"period": "2019-2024",
-			"location": "Gopalganj, Bangladesh",
-			"description": [
-				"Graduated with a 3.8 GPA.",
-				"Relevant courses: Data Structures, Algorithms, Web Development, Database Management."
-			]
-		}
-	],
-	"projects": [
-		{
-			"id": 4,
-			"title": "Tutorlane",
-			"description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
-			"thumbnail": "/tutorlane.png",
-			"techStack": [
-				"React JS",
-				"Tailwind CSS",
-				"MongoDB",
-				"Node.js",
-				"Express"
-			],
-			"githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
-			"liveLink": "https://tutorlane.vercel.app/",
-			"challenges": [
-				"Handling role based authentication was new to me. Thus it was a challenge but I enjoyed it."
-			],
-			"improvements": [
-				"Stripe Payment  gateway should be implemented.",
-				"Dashboard layout can be more user-friendly."
-			]
-		},
-		{
-			"id": 1,
-			"title": "StudyMate",
-			"description": "A assignment evaluation platform for study-related tasks. Built with React, Node.js, and MongoDB.",
-			"thumbnail": "/study-mate.png",
-			"techStack": [
-				"React JS",
-				"Tailwind CSS",
-				"MongoDB",
-				"Node.js",
-				"Express"
-			],
-			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
-			"liveLink": "https://ph-a11-group-study-client.vercel.app",
-			"challenges": ["Handling complex state management was a challenge."],
-			"improvements": ["File upload feature should be implemented."]
-		},
-		{
-			"id": 2,
-			"title": "CrowdCube",
-			"description": "A assignment evaluation platform for study-related tasks.",
-			"thumbnail": "/crowdcube.png",
-			"techStack": [
-				"React JS",
-				"Tailwind CSS",
-				"MongoDB",
-				"Node.js",
-				"Express"
-			],
-			"githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
-			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/",
-			"challenges": [
-				"Handling form validation and numeric input was a challenge."
-			],
-			"improvements": [
-				"Implement a real payment gateway such as Stripe or SSL Commerz."
-			]
-		},
-		{
-			"id": 3,
-			"title": "Bookify",
-			"description": "A online hotel booking platform that allows users to search, book, and manage hotel reservations.",
-			"thumbnail": "/bookify.png",
-			"techStack": [
-				"React JS",
-				"Tailwind CSS",
-				"MongoDB",
-				"Node.js",
-				"Express"
-			],
-			"githubLink": "https://github.com/Fahim047/bookify",
-			"liveLink": "https://bookify-d2yy.onrender.com",
-			"challenges": [
-				"Implementing SSL Commerz payment gateway was a real pain!",
-				"Optimizing database queries to improve performance."
-			],
-			"improvements": ["Redesigning the UI/UX to make it more user-friendly."]
-		}
-	],
-	"testimonials": [
-		{
-			"name": "Jane Smith",
-			"company": "WebSolutions",
-			"feedback": "John is an exceptional developer with a strong ability to break down complex problems into manageable tasks. His expertise in full-stack development made a significant difference in our project."
-		},
-		{
-			"name": "Michael Johnson",
-			"company": "TechCorp",
-			"feedback": "Working with John has been a pleasure. He is not only skilled in modern web technologies but also a great team player and communicator."
-		}
-	],
-	"certifications": [
-		{
-			"name": "AWS Certified Solutions Architect",
-			"organization": "Amazon Web Services",
-			"date": "2022-07"
-		},
-		{
-			"name": "Certified Kubernetes Administrator",
-			"organization": "CNCF",
-			"date": "2023-01"
-		}
-	],
-	"blogs": [
-		{
-			"id": 1,
-			"title": "Understanding var, let, and const in JavaScript",
-			"description": "In this blog post, we’ll explore what makes each of these keywords different, when to use them, and the best ways to use them.",
-			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1725682691718/96816755-0d66-419b-8c65-cc4081cecda4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-			"date": "2024-09-27",
-			"tags": ["JavaScript", "Web Development"],
-			"link": "https://fif.hashnode.dev/understanding-var-let-and-const-in-javascript"
-		},
-		{
-			"id": 2,
-			"title": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
-			"description": "এই ব্লগ পোস্টে আমরা জানবো, কিভাবে গিটে একাধিক রিমোট ম্যানেজ করা যায়",
-			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UT8LMo-wlyk/upload/a92bc838965afe6de4ad1e5fa87111e1.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-			"date": "2024-10-18",
-			"tags": ["Git", "Github", "Version Control"],
-			"link": "https://fif.hashnode.dev/manage-multiple-remote-repo-in-git-bangla"
-		},
-		{
-			"id": 4,
-			"title": "A Simple Guide to Pointers in Go",
-			"description": "পয়েন্টার (Pointer) হচ্ছে এমন একটি ভেরিয়েবল, যা অন্য একটি ভেরিয়েবলের মেমরি এড্রেস ধরে রাখে। সহজ ভাষায়, এটি মেমরির রেফারেন্স রাখে এবং এর মাধ্যমে মূল ডাটা নিয়ে কাজ করা যায়।",
-			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1742575767912/6e01e518-5f67-4fde-bc6c-92809d779972.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-			"date": "2025-03-21",
-			"tags": ["Go", "Pointers", "Memory Management"],
-			"link": "https://fif.hashnode.dev/a-simple-guide-to-pointers-in-golang"
-		},
-		{
-			"id": 4,
-			"title": "Higher-Order Functions, Callbacks, and First-Class Citizens in Go (Golang): A Complete Guide",
-			"description": "Hello readers! Today, we’re diving into some fundamental concepts of Go (Golang) that are not only essential for mastering the language but also widely applicable in other programming languages. Whether you’re a beginner or an experienced developer, understanding these concepts will help you write more flexible, reusable, and efficient code. Let’s get started!",
-			"thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1739033396744/3e9494db-1c53-4ace-a243-2a2c25ee8801.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
-			"date": "2025-02-08",
-			"tags": [
-				"Go",
-				"First Order Functions",
-				"Higher Order Functions",
-				"First Class Citizens",
-				"Callback Functions"
-			],
-			"link": "https://fif.hashnode.dev/higher-order-functions-callbacks-and-first-class-citizens-in-go-golang-a-complete-guide"
-		}
-	],
-	"featuredProjects": [
-		{
-			"id": 4,
-			"title": "Tutorlane",
-			"description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
-			"thumbnail": "/tutorlane.png",
-			"techStack": [
-				"React JS",
-				"Tailwind CSS",
-				"MongoDB",
-				"Node.js",
-				"Express"
-			],
-			"githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
-			"liveLink": "https://tutorlane.vercel.app/"
-		},
-		{
-			"id": 1,
-			"title": "Bookify - Online Hotel Booking Platform",
-			"description": "Bookify is an online hotel booking platform that allows users to search, book, and manage hotel reservations.",
-			"thumbnail": "/bookify.png",
-			"liveLink": "https://bookify-d2yy.onrender.com"
-		},
-		{
-			"id": 2,
-			"title": "CrowdCube - A Crowdfunding Platform",
-			"description": "CrowdCube is a crowdfunding platform that allows users to create and manage crowdfunding campaigns.",
-			"thumbnail": "/crowdcube.png",
-			"liveLink": "https://ph-a10-crowdfunding-client.vercel.app/"
-		},
-		{
-			"id": 3,
-			"title": "StudyMate",
-			"description": "A assignment evaluation platform for study-related tasks.",
-			"thumbnail": "/study-mate.png",
-			"liveLink": "https://ph-a11-group-study-client.vercel.app"
-		}
-	]
+  "personalInfo": {
+    "name": "Fahimul Islam",
+    "title": "Full Stack Developer",
+    "email": "fahimulislam58@gmail.com",
+    "phone": "+8801521578288",
+    "location": "Manikganj, Bangladesh",
+    "bio": "Passionate developer with over 5 years of experience building full-stack applications. I specialize in React, Node.js, and scalable backend systems.",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/fahimul047",
+      "github": "https://github.com/Fahim047",
+      "facebook": "https://www.facebook.com/fahimul.islam.047",
+      "twitter": "https://x.com/_fahim047",
+      "portfolio": "https://fifolio.vercel.app"
+    }
+  },
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
+    "frameworks": ["React", "Next.js", "Node.js", "Express", "Django"],
+    "databases": ["MongoDB", "PostgreSQL", "MySQL"],
+    "tools": ["Git", "Docker", "Jenkins", "AWS", "Webpack"]
+  },
+  "experience": [
+    {
+      "company": "TechCorp",
+      "role": "Senior Full Stack Developer",
+      "startDate": "2021-06",
+      "endDate": "Present",
+      "location": "Remote",
+      "description": [
+        "Led a team of 5 developers in building a SaaS platform using React and Node.js.",
+        "Designed and implemented RESTful APIs, optimizing database queries by 20%.",
+        "Collaborated with cross-functional teams to deliver new features."
+      ]
+    },
+    {
+      "company": "WebSolutions",
+      "role": "Full Stack Developer",
+      "startDate": "2019-03",
+      "endDate": "2021-05",
+      "location": "New York, USA",
+      "description": [
+        "Developed an e-commerce platform with Next.js, improving page load speeds by 30%.",
+        "Integrated third-party payment gateways and optimized performance using server-side rendering.",
+        "Worked closely with the UI/UX team to improve user experience."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Gopalganj Science and Technology University",
+      "degree": "Bachelor of Science in Computer Science And Engineering",
+      "logo": "/bsmrstu-logo.jpg",
+      "period": "2019-2024",
+      "location": "Gopalganj, Bangladesh",
+      "description": [
+        "Graduated with a 3.8 GPA.",
+        "Relevant courses: Data Structures, Algorithms, Web Development, Database Management."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 5,
+      "title": "Learn With Fahim",
+      "slug": "learn-with-fahim",
+      "description": "An online learning management system that allows students to enroll in courses, track progress, and access learning materials.",
+      "thumbnail": "https://i.ibb.co.com/0pCHcK5X/image.png",
+      "techStack": [
+        "Next.js",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Stripe"
+      ],
+      "githubLink": "https://github.com/Fahim047/learn-with-fahim",
+      "liveLink": null,
+      "challenges": [
+        "Handling role based authentication was new to me. Thus it was a challenge but I enjoyed it.",
+        "Implementing course progress tracking and quizzes was a bit tricky.",
+        "Implementing Stripe Payment gateway was challenging but rewarding."
+      ],
+      "improvements": [
+        "Rate limiting for API endpoints can be added.",
+        "Implementing more interactive learning materials like videos and assignments.",
+        "Dashboard layout can be more user-friendly."
+      ],
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Tutorlane",
+      "slug": "tutorlane",
+      "description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
+      "thumbnail": "/tutorlane.png",
+      "techStack": [
+        "React JS",
+        "Tailwind CSS",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
+      "liveLink": "https://tutorlane.vercel.app/",
+      "challenges": [
+        "Handling role based authentication was new to me. Thus it was a challenge but I enjoyed it."
+      ],
+      "improvements": [
+        "Stripe Payment gateway should be implemented.",
+        "Dashboard layout can be more user-friendly."
+      ],
+      "featured": true
+    },
+    {
+      "id": 1,
+      "title": "StudyMate",
+      "slug": "studymate",
+      "description": "A assignment evaluation platform for study-related tasks. Built with React, Node.js, and MongoDB.",
+      "thumbnail": "/study-mate.png",
+      "techStack": [
+        "React JS",
+        "Tailwind CSS",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
+      "liveLink": "https://ph-a11-group-study-client.vercel.app",
+      "challenges": ["Handling complex state management was a challenge."],
+      "improvements": ["File upload feature should be implemented."],
+      "featured": false
+    },
+    {
+      "id": 2,
+      "title": "CrowdCube",
+      "slug": "crowdcube",
+      "description": "A crowdfunding platform that allows users to create and manage fundraising campaigns.",
+      "thumbnail": "/crowdcube.png",
+      "techStack": [
+        "React JS",
+        "Tailwind CSS",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "githubLink": "https://github.com/Fahim047/ph-a11-group-study-client",
+      "liveLink": "https://ph-a10-crowdfunding-client.vercel.app/",
+      "challenges": [
+        "Handling form validation and numeric input was a challenge."
+      ],
+      "improvements": [
+        "Implement a real payment gateway such as Stripe or SSL Commerz."
+      ],
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Bookify",
+      "slug": "bookify",
+      "description": "An online hotel booking platform that allows users to search, book, and manage hotel reservations.",
+      "thumbnail": "/bookify.png",
+      "techStack": [
+        "React JS",
+        "Tailwind CSS",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "githubLink": "https://github.com/Fahim047/bookify",
+      "liveLink": "https://bookify-d2yy.onrender.com",
+      "challenges": [
+        "Implementing SSL Commerz payment gateway was a real pain!",
+        "Optimizing database queries to improve performance."
+      ],
+      "improvements": ["Redesigning the UI/UX to make it more user-friendly."],
+      "featured": true
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": 4,
+      "title": "Tutorlane",
+      "description": "An online education platform that allows students to enroll in online classes, teachers to create classes, and admins to manage the platform.",
+      "thumbnail": "/tutorlane.png",
+      "techStack": [
+        "React JS",
+        "Tailwind CSS",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "githubLink": "https://github.com/Fahim047/ph-a12-tutorlane-client",
+      "liveLink": "https://tutorlane.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "Bookify - Online Hotel Booking Platform",
+      "description": "Bookify is an online hotel booking platform that allows users to search, book, and manage hotel reservations.",
+      "thumbnail": "/bookify.png",
+      "liveLink": "https://bookify-d2yy.onrender.com"
+    },
+    {
+      "id": 2,
+      "title": "CrowdCube - A Crowdfunding Platform",
+      "description": "CrowdCube is a crowdfunding platform that allows users to create and manage crowdfunding campaigns.",
+      "thumbnail": "/crowdcube.png",
+      "liveLink": "https://ph-a10-crowdfunding-client.vercel.app/"
+    },
+    {
+      "id": 1,
+      "title": "StudyMate",
+      "description": "A assignment evaluation platform for study-related tasks.",
+      "thumbnail": "/study-mate.png",
+      "liveLink": "https://ph-a11-group-study-client.vercel.app"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Jane Smith",
+      "company": "WebSolutions",
+      "feedback": "John is an exceptional developer with a strong ability to break down complex problems into manageable tasks. His expertise in full-stack development made a significant difference in our project."
+    },
+    {
+      "name": "Michael Johnson",
+      "company": "TechCorp",
+      "feedback": "Working with John has been a pleasure. He is not only skilled in modern web technologies but also a great team player and communicator."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "organization": "Amazon Web Services",
+      "date": "2022-07"
+    },
+    {
+      "name": "Certified Kubernetes Administrator",
+      "organization": "CNCF",
+      "date": "2023-01"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Understanding var, let, and const in JavaScript",
+      "description": "In this blog post, we’ll explore what makes each of these keywords different, when to use them, and the best ways to use them.",
+      "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1725682691718/96816755-0d66-419b-8c65-cc4081cecda4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      "date": "2024-09-27",
+      "tags": ["JavaScript", "Web Development"],
+      "link": "https://fif.hashnode.dev/understanding-var-let-and-const-in-javascript"
+    },
+    {
+      "id": 2,
+      "title": "গিটে একাধিক রিমোট ম্যানেজ করার উপায়",
+      "description": "এই ব্লগ পোস্টে আমরা জানবো, কিভাবে গিটে একাধিক রিমোট ম্যানেজ করা যায়",
+      "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UT8LMo-wlyk/upload/a92bc838965afe6de4ad1e5fa87111e1.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      "date": "2024-10-18",
+      "tags": ["Git", "Github", "Version Control"],
+      "link": "https://fif.hashnode.dev/manage-multiple-remote-repo-in-git-bangla"
+    },
+    {
+      "id": 4,
+      "title": "A Simple Guide to Pointers in Go",
+      "description": "পয়েন্টার (Pointer) হচ্ছে এমন একটি ভেরিয়েবল, যা অন্য একটি ভেরিয়েবলের মেমরি এড্রেস ধরে রাখে। সহজ ভাষায়, এটি মেমরির রেফারেন্স রাখে এবং এর মাধ্যমে মূল ডাটা নিয়ে কাজ করা যায়।",
+      "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1742575767912/6e01e518-5f67-4fde-bc6c-92809d779972.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      "date": "2025-03-21",
+      "tags": ["Go", "Pointers", "Memory Management"],
+      "link": "https://fif.hashnode.dev/a-simple-guide-to-pointers-in-golang"
+    },
+    {
+      "id": 5,
+      "title": "Higher-Order Functions, Callbacks, and First-Class Citizens in Go (Golang): A Complete Guide",
+      "description": "Hello readers! Today, we’re diving into some fundamental concepts of Go (Golang) that are not only essential for mastering the language but also widely applicable in other programming languages. Whether you’re a beginner or an experienced developer, understanding these concepts will help you write more flexible, reusable, and efficient code. Let’s get started!",
+      "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1739033396744/3e9494db-1c53-4ace-a243-2a2c25ee8801.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+      "date": "2025-02-08",
+      "tags": ["Go", "Higher Order Functions", "Callbacks", "Programming"],
+      "link": "https://fif.hashnode.dev/higher-order-functions-callbacks-and-first-class-citizens-in-go-golang-a-complete-guide"
+    }
+  ]
 }

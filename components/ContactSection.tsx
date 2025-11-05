@@ -1,69 +1,111 @@
+"use client";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useForm } from "react-hook-form";
+
+type ContactFormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 const ContactSection = () => {
-	return (
-		<section className="py-12">
-			<div className="container mx-auto px-4">
-				<h2 className="text-2xl font-bold text-center mb-8 text-emerald-400">
-					Get In Touch
-				</h2>
-				<div className="max-w-4xl mx-auto flex flex-col gap-8">
-					<div className="flex-1 bg-primary p-6 rounded-lg shadow-md">
-						<form className="space-y-5">
-							<div>
-								<label
-									htmlFor="name"
-									className="block text-sm font-bold text-blue-400 mb-1"
-								>
-									Name
-								</label>
-								<input
-									type="text"
-									id="name"
-									name="name"
-									className="bg-transparent w-full px-3 py-2 border border-gray-600  rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
-									placeholder="Enter your name"
-								/>
-							</div>
-							<div>
-								<label
-									htmlFor="email"
-									className="block text-sm font-bold text-blue-400 mb-1"
-								>
-									Email
-								</label>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									className="bg-transparent w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400"
-									placeholder="Enter your email address"
-								/>
-							</div>
-							<div>
-								<label
-									htmlFor="message"
-									className="block text-sm font-bold text-blue-400 mb-1"
-								>
-									Message
-								</label>
-								<textarea
-									id="message"
-									name="message"
-									className="h-40 bg-transparent w-full px-3 py-2 border border-gray-600 rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-400 resize-none"
-									placeholder="Your message here..."
-								></textarea>
-							</div>
-							<button
-								type="submit"
-								className="w-full bg-blue-400 text-[#0C121e] py-2 px-4 rounded-md hover:bg-blue-500 transition duration-300 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-blue-300"
-							>
-								Send Message
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+  const form = useForm<ContactFormValues>({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = (values: ContactFormValues) => {
+    console.log(values);
+  };
+
+  return (
+    <section className="py-12">
+      <div className="container mx-auto px-4">
+        <h2 className="text-2xl font-bold text-center mb-8 text-emerald-400">
+          Get In Touch
+        </h2>
+
+        <div className="max-w-2xl mx-auto bg-card p-8 rounded-2xl shadow-lg">
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="flex flex-col gap-6"
+            >
+              {/* Name */}
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Name</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="Enter your name" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              {/* Email */}
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Email</FormLabel>
+                    <FormControl>
+                      <Input
+                        {...field}
+                        type="email"
+                        placeholder="Enter your email"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              {/* Message */}
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Message</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        {...field}
+                        placeholder="Your message here..."
+                        className="resize-none h-40"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <Button type="submit" className="w-full cursor-pointer">
+                Send Message
+              </Button>
+            </form>
+          </Form>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default ContactSection;

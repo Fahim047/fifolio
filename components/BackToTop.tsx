@@ -1,44 +1,45 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+"use client";
+import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import { Button } from "./ui/button";
 
-const BackToTop = () => {
-	const [isVisible, setIsVisible] = useState(false);
+const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-	// Show button when page is scrolled up to a certain distance
-	const toggleVisibility = () => {
-		if (window.scrollY > 300) {
-			setIsVisible(true);
-		} else {
-			setIsVisible(false);
-		}
-	};
+  // Show button when page is scrolled up to a certain distance
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-	// Scroll to top function
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth',
-		});
-	};
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-	useEffect(() => {
-		window.addEventListener('scroll', toggleVisibility);
-		return () => window.removeEventListener('scroll', toggleVisibility);
-	}, []);
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
-	return (
-		<div className="absolute bottom-0 right-0">
-			{isVisible && (
-				<button
-					onClick={scrollToTop}
-					className="bg-blue-400 hover:bg-blue-500 text-[#121212] p-3 rounded-full shadow-lg transition duration-300"
-				>
-					<FaArrowUp />
-				</button>
-			)}
-		</div>
-	);
+  return (
+    <div className="absolute bottom-0 right-0">
+      {isVisible && (
+        <Button
+          onClick={scrollToTop}
+          className="size-10 rounded-full shadow-lg transition duration-300 cursor-pointer"
+        >
+          <FaArrowUp />
+        </Button>
+      )}
+    </div>
+  );
 };
 
-export default BackToTop;
+export default ScrollToTop;

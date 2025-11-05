@@ -7,8 +7,8 @@ export default async function Home() {
   return (
     <>
       <Banner />
-      <SkillsSection />
       <FeaturedProjects />
+      <SkillsSection />
       <BlogSection />
       <ContactSection />
     </>
