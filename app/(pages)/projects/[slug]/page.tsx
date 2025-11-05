@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { getProjectBySlug } from "@/data/get-project";
+import { getProjects } from "@/data";
+import { getProjectBySlug } from "@/data";
 import { ChevronLeft, Github, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,14 @@ import Link from "next/link";
 interface ProjectDetailsPageProps {
   params: Promise<{ slug: string }>;
 }
+
+export async function generateStaticParams() {
+  const projects = getProjects();
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: ProjectDetailsPageProps) {
   const { slug } = await params;
   const projectData = getProjectBySlug(slug);

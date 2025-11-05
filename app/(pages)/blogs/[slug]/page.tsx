@@ -1,6 +1,6 @@
 import BlogHero from "@/components/BlogHero";
 import { BLOG_TITLE } from "@/constants";
-import { loadBlogPost } from "@/helpers";
+import { getBlogPostList, loadBlogPost } from "@/helpers";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { COMPONENTS_MAP } from "@/helpers";
 import TagList from "@/components/TagList";
@@ -9,6 +9,13 @@ import Link from "next/link";
 
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  const blogs = await getBlogPostList();
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: BlogPostProps) {

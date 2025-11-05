@@ -4,3 +4,7 @@ import { cache } from "react";
 export const getProjectBySlug = cache((slug:string) => {
   return data.projects.find((project) => project.slug === slug);
 })
+
+export const getProjects = cache(() => {
+    return data.projects;
+})
