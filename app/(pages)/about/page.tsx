@@ -1,5 +1,5 @@
+import SkillList from "@/components/SkillList";
 import SocialLinks from "@/components/SocialLinks";
-import { Badge } from "@/components/ui/badge";
 import data from "@/data/data.json";
 import Image from "next/image";
 
@@ -27,34 +27,6 @@ const aboutData = {
       "When I'm not coding, I like playing cricket (soccer), watching movies, and sometimes playing video games. I also enjoy talking to other developers, sharing knowledge, and contributing to open-source projects.",
   },
 };
-
-const skills = [
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "JavaScript",
-  "TypeScript",
-  "Golang",
-  "Python",
-  "C",
-  "C++",
-  "Git",
-  "React",
-  "Next.js",
-  "Vue",
-  "Angular",
-  "Node.js",
-  "MongoDB",
-  "Express",
-  "PostgreSQL",
-  "Prisma",
-  "Drizzzle ORM",
-  "NestJS",
-  "RESTful APIs",
-  "GraphQL",
-  "Docker",
-  "Linux",
-];
 
 export default function AboutPage() {
   return (
@@ -109,17 +81,7 @@ export default function AboutPage() {
       {/* Skills Section */}
       <section className="max-w-4xl mx-auto mt-12">
         <h2 className="text-2xl font-semibold mb-6 text-primary">Skills</h2>
-        <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <Badge
-              key={skill}
-              variant={"outline"}
-              className="px-2 py-1 bg-secondary text-sm"
-            >
-              {skill}
-            </Badge>
-          ))}
-        </div>
+        <SkillList />
       </section>
 
       {/* Education Section */}

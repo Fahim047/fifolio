@@ -1,6 +1,21 @@
 import { Code } from "bright";
-import theme from "./theme";
+import type { ComponentProps } from "react";
 
-export default function CodeSnippet(props: any) {
-  return <Code {...props} theme={theme} />;
+type CodeSnippetProps = ComponentProps<typeof Code>;
+
+export default function CodeSnippet(props: CodeSnippetProps) {
+  return (
+    <Code
+      {...props}
+      theme={{
+        dark: "github-dark",
+        light: "github-light",
+        lightSelector: '[data-theme="light"]',
+        darkSelector: '[data-theme="dark"]',
+      }}
+      lang={props.lang}
+      lineNumbers
+      // title={"hello"}
+    />
+  );
 }

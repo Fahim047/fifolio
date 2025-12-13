@@ -95,7 +95,7 @@ export default async function ProjectDetailsPage({
           href={projectData.githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={buttonVariants()}
+          className={buttonVariants({ variant: "outline" })}
         >
           <Github className="w-4 h-4 mr-2" />
           Source Code

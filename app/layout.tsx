@@ -10,6 +10,11 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+const soraSans = localFont({
+  src: "./fonts/SoraVF.ttf",
+  variable: "--font-sora-sans",
+  weight: "100 900",
+});
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -17,7 +22,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fahimul Islam: Portfolio",
+  title: `Fahimul Islam's Portfolio`,
   description:
     "Passionate full-stack web developer with a love for JavaScript and Golang.",
 };

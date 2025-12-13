@@ -6,7 +6,7 @@ export const navLinks = [
   { title: "About", path: "/about" },
   { title: "Projects", path: "/projects" },
   { title: "Blogs", path: "/blogs" },
-  { title: "Contact", path: "/contact" },
+  // { title: "Contact", path: "/contact" },
 ] as const;
 
 export const MY_NAME = "Fahimul Islam";

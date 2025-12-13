@@ -11,10 +11,11 @@ const FeaturedProjects = () => {
         <h2 className="text-2xl font-bold text-yellow-400">
           Featured Projects
         </h2>
-        <Link href="/projects" className={buttonVariants()}>
-          <span>
-            <HiArrowRight />
-          </span>
+        <Link
+          href="/projects"
+          className={buttonVariants({ variant: "outline" })}
+        >
+          <HiArrowRight />
           <span>View all</span>
         </Link>
       </div>

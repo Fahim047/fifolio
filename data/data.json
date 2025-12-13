@@ -74,7 +74,7 @@
         "Stripe"
       ],
       "githubLink": "https://github.com/Fahim047/learn-with-fahim",
-      "liveLink": null,
+      "liveLink": "https://learn-with-fahim.vercel.app",
       "challenges": [
         "Handling role based authentication was new to me. Thus it was a challenge but I enjoyed it.",
         "Implementing course progress tracking and quizzes was a bit tricky.",

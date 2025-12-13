@@ -59,7 +59,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         author={author}
         readingTime={readingTime}
       />
-      <div className="prose dark:prose-invert prose-lg mx-auto mb-20 mt-4">
+      <div className="prose prose-xl dark:prose-invert mx-auto mb-20 mt-4">
         <TagList tags={tags} className="my-8" />
         <MDXRemote source={content} components={COMPONENTS_MAP} />
       </div>
