@@ -1,45 +1,31 @@
 import data from "@/data/data.json";
 import Link from "next/link";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import type { JSX } from "react";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+const iconMap: Record<string, JSX.Element> = {
+  Github: <FaGithub />,
+  LinkedIn: <FaLinkedin />,
+  Facebook: <FaFacebook />,
+  Twitter: <FaTwitter />,
+};
+
 const SocialLinks = () => {
-  const {
-    personalInfo: { socialLinks },
-  } = data;
+  const { socialLinks } = data.personalInfo;
+
   return (
-    <ul className="flex items-center gap-1">
-      <li>
-        <Link
-          href={socialLinks.github}
-          target="_blank"
-          className="flex items-center justify-center p-2 rounded-full hover:bg-emerald-500 transition-colors duration-300"
-        >
-          <span className="text-2xl">
-            <FaGithub />
-          </span>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href={socialLinks.linkedin}
-          target="_blank"
-          className="flex items-center justify-center p-2 rounded-full hover:bg-blue-400 transition-colors duration-300"
-        >
-          <span className="text-2xl">
-            <FaLinkedin />
-          </span>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href={socialLinks.facebook}
-          target="_blank"
-          className="flex items-center justify-center p-2 rounded-full hover:bg-blue-500 transition-colors duration-300"
-        >
-          <span className="text-2xl">
-            <FaFacebook />
-          </span>
-        </Link>
-      </li>
+    <ul className="flex items-center gap-2">
+      {socialLinks.map(({ name, url, hoverColor }) => (
+        <li key={name}>
+          <Link
+            href={url}
+            target="_blank"
+            className={`flex items-center justify-center p-2 rounded-full transition-colors duration-300 ${hoverColor}`}
+          >
+            <span className={`text-xl`}>{iconMap[name]}</span>
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };

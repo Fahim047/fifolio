@@ -6,6 +6,7 @@ import { COMPONENTS_MAP } from "@/helpers";
 import TagList from "@/components/TagList";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
@@ -20,7 +21,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostProps) {
   const { slug } = await params;
-  const { frontmatter } = await loadBlogPost(slug);
+  const blogPostData = await loadBlogPost(slug);
+  if (!blogPostData) {
+    return null;
+  }
+  const { frontmatter } = blogPostData;
 
   return {
     title: `${frontmatter.title} • ${BLOG_TITLE}`,
@@ -30,7 +35,12 @@ export async function generateMetadata({ params }: BlogPostProps) {
 
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params;
-  const { frontmatter, content } = await loadBlogPost(slug);
+  const blogPostData = await loadBlogPost(slug);
+
+  if (!blogPostData) {
+    return notFound();
+  }
+  const { frontmatter, content } = blogPostData;
 
   const {
     title,

@@ -31,8 +31,8 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-  { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+  { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+  { name: "CSS", icon: SiCss3, color: "#1572B6" },
   { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
   { name: "Bootstrap", icon: SiBootstrap, color: "#563D7C" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
@@ -60,14 +60,14 @@ const SkillList: React.FC = () => {
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 
+          className="inline-flex items-center gap-1.5 px-4 py-2 
                          bg-secondary/50 hover:bg-secondary rounded-md
                          border border-border/50 hover:border-border
                          transition-all duration-200 hover:scale-105
-                         cursor-default group"
+                         cursor-default group dark:bg-gray-600/30"
         >
           <skill.icon
-            className="text-base transition-colors"
+            className="text-2xl transition-colors"
             style={{ color: skill.color }}
           />
           <span className="text-sm font-medium text-foreground">

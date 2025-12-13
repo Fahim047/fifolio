@@ -6,17 +6,20 @@ import { buttonVariants } from "./ui/button";
 const FeaturedProjects = () => {
   const featuredProjects = data.projects.filter((p) => p.featured);
   return (
-    <section className="py-12">
-      <div className="flex flex-wrap gap-4 justify-between items-center">
+    <section className="mt-12">
+      <div className="flex flex-wrap gap-4 justify-between items-center mb-4">
         <h2 className="text-2xl font-bold text-yellow-400">
           Featured Projects
         </h2>
         <Link
           href="/projects"
-          className={buttonVariants({ variant: "outline" })}
+          className={`${buttonVariants({
+            variant: "link",
+            className: "group inline-flex items-center gap-1",
+          })}`}
         >
-          <HiArrowRight />
           <span>View all</span>
+          <HiArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
         </Link>
       </div>
       <div className="my-6">

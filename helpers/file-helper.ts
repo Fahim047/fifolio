@@ -34,8 +34,14 @@ export async function getBlogPostList(): Promise<BlogPost[]> {
 }
 
 export const loadBlogPost = cache(
-  async (slug: string): Promise<BlogPostData> => {
-    const rawContent = await readFile(`/content/${slug}.mdx`);
+  async (slug: string): Promise<BlogPostData | null> => {
+    let rawContent;
+    try {
+      rawContent = await readFile(`/content/${slug}.mdx`);
+    } catch (error) {
+      console.error(`Error reading file for slug ${slug}:`, error);
+      return null;
+    }
     const { data: frontmatter, content } = matter(rawContent);
 
     const readingTime = calculateReadingTime(content);

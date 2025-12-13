@@ -6,13 +6,32 @@
     "phone": "+8801521578288",
     "location": "Manikganj, Bangladesh",
     "bio": "Passionate developer with over 5 years of experience building full-stack applications. I specialize in React, Node.js, and scalable backend systems.",
-    "socialLinks": {
-      "linkedin": "https://www.linkedin.com/in/fahimul047",
-      "github": "https://github.com/Fahim047",
-      "facebook": "https://www.facebook.com/fahimul.islam.047",
-      "twitter": "https://x.com/_fahim047",
-      "portfolio": "https://fifolio.vercel.app"
-    }
+    "socialLinks": [
+      {
+        "name": "Github",
+        "url": "https://github.com/Fahim047",
+        "hoverColor": "hover:bg-emerald-500",
+        "textColor": "text-white"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/fahimul047",
+        "hoverColor": "hover:bg-blue-400",
+        "textColor": "text-white"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/fahimul.islam.047",
+        "hoverColor": "hover:bg-blue-500",
+        "textColor": "text-white"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://x.com/_fahim047",
+        "hoverColor": "hover:bg-sky-400",
+        "textColor": "text-white"
+      }
+    ]
   },
   "skills": {
     "languages": ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
