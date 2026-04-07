@@ -11,31 +11,21 @@ tags: ["go", "slices"]
 
 When you use `append()` on a slice and the number of elements goes **beyond its current capacity**, Go does the following **under the hood**:
 
----
-
 ### **1. Allocates a New Underlying Array**
 
 Go automatically creates a **new, bigger array** (usually 2x the old capacity, but not always—depends on the implementation).
-
----
 
 ### **2. Copies Existing Elements**
 
 All the elements from the old slice are **copied** into the new array.
 
----
-
 ### **3. Adds the New Element**
 
 The new element is added to the new array.
 
----
-
 ### **4. Returns a New Slice**
 
 A new slice pointing to the new array is returned. The original slice is unchanged (but still points to the old array).
-
----
 
 ### **Example:**
 

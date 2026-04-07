@@ -15,7 +15,6 @@ export default function CodeSnippet(props: CodeSnippetProps) {
       }}
       lang={props.lang}
       lineNumbers
-      // title={"hello"}
     />
   );
 }
