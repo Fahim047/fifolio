@@ -3,7 +3,7 @@ import type { IconType } from "react-icons";
 import {
   SiAngular,
   SiBootstrap,
-  SiCss3,
+  SiCss,
   SiDocker,
   SiExpress,
   SiFirebase,
@@ -32,7 +32,7 @@ interface Skill {
 
 const skills: Skill[] = [
   { name: "HTML", icon: SiHtml5, color: "#E34F26" },
-  { name: "CSS", icon: SiCss3, color: "#1572B6" },
+  { name: "CSS", icon: SiCss, color: "#1572B6" },
   { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
   { name: "Bootstrap", icon: SiBootstrap, color: "#563D7C" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
